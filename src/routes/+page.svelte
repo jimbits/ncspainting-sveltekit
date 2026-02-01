@@ -4,19 +4,19 @@
 
 	import Hero from '$lib/seo/Hero.svelte';
 	import Process from '$lib/components/pages/landing/Process.svelte';
-	import Services from '$lib/components/pages/landing/Services.svelte';
+
 	import EcoFriendly from '$lib/components/pages/landing/EcoFriendly.svelte';
 	import LetUsHelp from '$lib/components/pages/landing/LetUsHelp.svelte';
-	import Test from '$lib/components/layouts/Test.svelte';
+	import ExteriorPaintingServices from '$lib/examples/ExteriorPaintingServices.svelte';
+	import AdditionalPaintingServices from '$lib/examples/AdditionalPaintingServices.svelte';
 </script>
 
-<Test />
 <Hero />
-
-<InteriorPaintingServices />
 <WhyChooseUs />
+<InteriorPaintingServices />
+<ExteriorPaintingServices />
+<AdditionalPaintingServices />
 <Process />
 <EcoFriendly />
-<Services />
 
 <LetUsHelp />
