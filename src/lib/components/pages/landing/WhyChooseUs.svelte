@@ -1,413 +1,170 @@
-<section
-	class="relative overflow-hidden bg-stone-50 py-16 sm:py-20"
->
-	<!-- Organic background shapes (stone-only) -->
-	<div
-		aria-hidden="true"
-		class="pointer-events-none absolute inset-0"
-	>
+<section id="why-choose-us" class="relative isolate overflow-hidden py-16 md:py-24">
+	<div class="absolute inset-0 -z-10 overflow-hidden" style="background-color: #f7fee7;">
+		<svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" class="h-full w-full object-cover">
+			<defs>
+				<filter id="hero-blur" x="-50%" y="-50%" width="200%" height="200%">
+					<feGaussianBlur stdDeviation="80" />
+				</filter>
+			</defs>
+
+			<ellipse cx="720" cy="-100" rx="800" ry="400" class="fill-lime-300/40" filter="url(#hero-blur)" />
+			<circle cx="400" cy="0" r="300" class="fill-lime-500/10" filter="url(#hero-blur)" />
+
+			<ellipse cx="720" cy="1000" rx="900" ry="500" class="fill-lime-300/30" filter="url(#hero-blur)" />
+			<circle cx="1100" cy="900" r="400" class="fill-lime-400/20" filter="url(#hero-blur)" />
+
+			<circle cx="720" cy="450" r="400" fill="#ffffff" fill-opacity="0.4" filter="url(#hero-blur)" />
+		</svg>
+
 		<div
-			class="absolute -top-24 left-1/2 h-72 w-[42rem] -translate-x-1/2 rounded-full bg-gradient-to-r from-stone-100 via-white to-stone-50 blur-3xl"
-		></div>
-		<div
-			class="absolute right-[-8rem] -bottom-24 h-72 w-72 rounded-full bg-stone-900/5 blur-2xl"
-		></div>
-		<div
-			class="absolute -bottom-10 left-[-6rem] h-56 w-56 rounded-full bg-stone-900/5 blur-2xl"
+			class="absolute inset-0"
+			style="background: linear-gradient(to bottom, transparent, rgba(247, 254, 231, 0.2), transparent);"
 		></div>
 	</div>
-
-	<div
-		class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
-	>
-		<!-- Section header -->
-		<header class="mx-auto max-w-3xl text-center">
-			<p
-				class="text-sm font-semibold tracking-wide text-stone-600"
-			>
-				Edmonton Residential Painting Company
-			</p>
-			<h2
-				class="mt-3 text-3xl font-extrabold tracking-tight text-stone-900 sm:text-4xl"
-			>
-				Why Homeowners Choose NCS Painting
-			</h2>
-			<p
-				class="mt-4 text-base leading-relaxed text-stone-600 sm:text-lg"
-			>
-				From careful prep to clean finishes, we help
-				Edmonton-area homeowners feel confident inviting a
-				painting crew into their home. Our interior and
-				exterior painting process is built for quality,
-				clarity, and respect for your space.
-			</p>
-		</header>
-
-		<div
-			class="mt-12 grid items-center gap-10 lg:grid-cols-12"
-		>
-			<!-- Left: Value cards -->
-			<div class="lg:col-span-7">
-				<ul
-					class="grid gap-4 sm:grid-cols-2"
-					aria-label="Reasons to choose NCS Painting"
-				>
-					<!-- Card 1 -->
-					<li
-						class="xxg rounded-2xl border border-stone-200 bg-white p-5 shadow-sm"
-					>
-						<div class="flex items-start gap-4">
-							<div
-								class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-stone-100 text-stone-900"
-							>
-								<!-- icon -->
-								<svg
-									aria-hidden="true"
-									class="h-5 w-5"
-									viewBox="0 0 24 24"
-									fill="none"
-								>
-									<path
-										d="M4 6h16M4 12h10M4 18h16"
-										stroke="currentColor"
-										stroke-width="2"
-										stroke-linecap="round"
-									/>
-								</svg>
-							</div>
-							<div>
-								<h3
-									class="text-base font-bold text-stone-900"
-								>
-									Clear, Detailed Quotes
-								</h3>
-								<p
-									class="mt-1 text-sm leading-relaxed text-stone-600"
-								>
-									Straightforward scope, timelines, and
-									expectations—so you know what’s included
-									before we start.
-								</p>
-							</div>
-						</div>
-					</li>
-
-					<!-- Card 2 -->
-					<li
-						class="rounded-2xl border border-stone-200 bg-white p-5 shadow-sm"
-					>
-						<div class="flex items-start gap-4">
-							<div
-								class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-stone-100 text-stone-900"
-							>
-								<svg
-									aria-hidden="true"
-									class="h-5 w-5"
-									viewBox="0 0 24 24"
-									fill="none"
-								>
-									<path
-										d="M12 21s7-4.5 7-11a7 7 0 10-14 0c0 6.5 7 11 7 11z"
-										stroke="currentColor"
-										stroke-width="2"
-									/>
-									<path
-										d="M12 10.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"
-										fill="currentColor"
-									/>
-								</svg>
-							</div>
-							<div>
-								<h3
-									class="text-base font-bold text-stone-900"
-								>
-									Local Edmonton Experience
-								</h3>
-								<p
-									class="mt-1 text-sm leading-relaxed text-stone-600"
-								>
-									We understand Edmonton homes, seasonal
-									conditions, and the prep required for
-									long-lasting exterior results.
-								</p>
-							</div>
-						</div>
-					</li>
-
-					<!-- Card 3 -->
-					<li
-						class="rounded-2xl border border-stone-200 bg-white p-5 shadow-sm"
-					>
-						<div class="flex items-start gap-4">
-							<div
-								class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-stone-100 text-stone-900"
-							>
-								<svg
-									aria-hidden="true"
-									class="h-5 w-5"
-									viewBox="0 0 24 24"
-									fill="none"
-								>
-									<path
-										d="M4 20h16M7 20V9l5-4 5 4v11"
-										stroke="currentColor"
-										stroke-width="2"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									/>
-									<path
-										d="M9 14h6"
-										stroke="currentColor"
-										stroke-width="2"
-										stroke-linecap="round"
-									/>
-								</svg>
-							</div>
-							<div>
-								<h3
-									class="text-base font-bold text-stone-900"
-								>
-									Respect for Your Home
-								</h3>
-								<p
-									class="mt-1 text-sm leading-relaxed text-stone-600"
-								>
-									Floors covered, furniture protected, tidy
-									work zones, and a clean handoff at the end
-									of each day.
-								</p>
-							</div>
-						</div>
-					</li>
-
-					<!-- Card 4 -->
-					<li
-						class="rounded-2xl border border-stone-200 bg-white p-5 shadow-sm"
-					>
-						<div class="flex items-start gap-4">
-							<div
-								class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-stone-100 text-stone-900"
-							>
-								<svg
-									aria-hidden="true"
-									class="h-5 w-5"
-									viewBox="0 0 24 24"
-									fill="none"
-								>
-									<path
-										d="M7 7h10v10H7z"
-										stroke="currentColor"
-										stroke-width="2"
-									/>
-									<path
-										d="M9 9h6v6H9z"
-										fill="currentColor"
-									/>
-								</svg>
-							</div>
-							<div>
-								<h3
-									class="text-base font-bold text-stone-900"
-								>
-									Prep-First Process
-								</h3>
-								<p
-									class="mt-1 text-sm leading-relaxed text-stone-600"
-								>
-									Proper prep creates better adhesion,
-									smoother finishes, and results that look
-									great longer—especially outside.
-								</p>
-							</div>
-						</div>
-					</li>
-
-					<!-- Card 5 -->
-					<li
-						class="rounded-2xl border border-stone-200 bg-white p-5 shadow-sm"
-					>
-						<div class="flex items-start gap-4">
-							<div
-								class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-stone-100 text-stone-900"
-							>
-								<svg
-									aria-hidden="true"
-									class="h-5 w-5"
-									viewBox="0 0 24 24"
-									fill="none"
-								>
-									<path
-										d="M8 12l2 2 6-6"
-										stroke="currentColor"
-										stroke-width="2"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									/>
-									<path
-										d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10z"
-										stroke="currentColor"
-										stroke-width="2"
-									/>
-								</svg>
-							</div>
-							<div>
-								<h3
-									class="text-base font-bold text-stone-900"
-								>
-									Quality You Can See
-								</h3>
-								<p
-									class="mt-1 text-sm leading-relaxed text-stone-600"
-								>
-									Crisp lines, even coverage, and a
-									consistent finish—built for interior
-									spaces and exterior curb appeal.
-								</p>
-							</div>
-						</div>
-					</li>
-
-					<!-- Card 6 -->
-					<li
-						class="rounded-2xl border border-stone-200 bg-white p-5 shadow-sm"
-					>
-						<div class="flex items-start gap-4">
-							<div
-								class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-stone-100 text-stone-900"
-							>
-								<svg
-									aria-hidden="true"
-									class="h-5 w-5"
-									viewBox="0 0 24 24"
-									fill="none"
-								>
-									<path
-										d="M12 8v5l3 2"
-										stroke="currentColor"
-										stroke-width="2"
-										stroke-linecap="round"
-									/>
-									<path
-										d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-										stroke="currentColor"
-										stroke-width="2"
-									/>
-								</svg>
-							</div>
-							<div>
-								<h3
-									class="text-base font-bold text-stone-900"
-								>
-									On-Time, Communicative
-								</h3>
-								<p
-									class="mt-1 text-sm leading-relaxed text-stone-600"
-								>
-									We confirm schedules, keep you updated,
-									and make it easy to plan around your
-									project.
-								</p>
-							</div>
-						</div>
-					</li>
-				</ul>
-
-				<!-- Proof strip (fill with real claims only) -->
-				<div class="mt-8 flex flex-wrap items-center gap-3">
+	<div class="container mx-auto px-4">
+		<div class="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
+			<div class="order-2 w-full lg:order-1 lg:w-1/2">
+				<header class="mb-12">
 					<span
-						class="rounded-full border border-stone-200 bg-white px-4 py-2 text-sm font-medium text-stone-700"
+						class="mb-4 inline-block rounded-full bg-lime-100 px-4 py-1 text-xs font-bold tracking-widest text-lime-700 uppercase"
 					>
-						Interior & Exterior Specialists
+						The NCS Difference
 					</span>
-					<span
-						class="rounded-full border border-stone-200 bg-white px-4 py-2 text-sm font-medium text-stone-700"
-					>
-						Edmonton Area Service
-					</span>
-					<span
-						class="rounded-full border border-stone-200 bg-white px-4 py-2 text-sm font-medium text-stone-700"
-					>
-						Free Estimates
-					</span>
+					<h2 class="mb-6 text-4xl leading-[1.1] font-black text-slate-900 md:text-6xl">
+						Why Edmonton Homeowners <span class="text-lime-500">Trust Us</span>
+						Every Time
+					</h2>
+					<p class="text-lg leading-relaxed text-slate-600">
+						Residential interior and exterior painting is about more than just a new color—it’s about protection and
+						long-term value. We deliver professional results built for Alberta’s toughest conditions.
+					</p>
+				</header>
+
+				<div class="mb-12 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2">
+					<div class="flex items-start gap-4">
+						<svg class="mt-1 h-6 w-6 flex-shrink-0 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+						</svg>
+						<div>
+							<h4 class="text-xl font-bold text-slate-900">Detailed prep work</h4>
+							<p class="mt-1 text-sm text-slate-500">
+								Meticulous surface preparation for a flawless and durable result.
+							</p>
+						</div>
+					</div>
+
+					<div class="flex items-start gap-4">
+						<svg class="mt-1 h-6 w-6 flex-shrink-0 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+						</svg>
+						<div>
+							<h4 class="text-xl font-bold text-slate-900">Clean, respectful crews</h4>
+							<p class="mt-1 text-sm text-slate-500">
+								Your home is treated with the utmost care and professional respect.
+							</p>
+						</div>
+					</div>
+
+					<div class="flex items-start gap-4">
+						<svg class="mt-1 h-6 w-6 flex-shrink-0 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+						</svg>
+						<div>
+							<h4 class="text-xl font-bold text-slate-900">Professional finish</h4>
+							<p class="mt-1 text-sm text-slate-500">
+								Crisp cut lines and even coverage on every interior or exterior project.
+							</p>
+						</div>
+					</div>
+
+					<div class="flex items-start gap-4">
+						<svg class="mt-1 h-6 w-6 flex-shrink-0 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+						</svg>
+						<div>
+							<h4 class="text-xl font-bold text-slate-900">On-time scheduling</h4>
+							<p class="mt-1 text-sm text-slate-500">
+								We stick to our timelines strictly so you can plan your life with confidence.
+							</p>
+						</div>
+					</div>
+
+					<div class="flex items-start gap-4">
+						<svg class="mt-1 h-6 w-6 flex-shrink-0 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+						</svg>
+						<div>
+							<h4 class="text-xl font-bold text-slate-900">Bonded & Insured</h4>
+							<p class="mt-1 text-sm text-slate-500">
+								Sleep easy knowing your property is protected by a fully certified crew.
+							</p>
+						</div>
+					</div>
+
+					<div class="flex items-start gap-4">
+						<svg class="mt-1 h-6 w-6 flex-shrink-0 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+						</svg>
+						<div>
+							<h4 class="text-xl font-bold text-slate-900">Clear communication</h4>
+							<p class="mt-1 text-sm text-slate-500">
+								Direct updates from the initial written estimate to the final walkthrough.
+							</p>
+						</div>
+					</div>
 				</div>
 
-				<!-- CTAs (must use / not #) -->
-				<div
-					class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center"
-				>
+				<div class="flex flex-wrap items-center gap-6 border-t border-slate-200 pt-8">
+					<div class="flex items-center gap-2">
+						<span class="text-3xl font-black text-lime-500">35+</span>
+						<span class="text-[10px] leading-tight font-bold text-slate-400 uppercase">
+							Years Serving
+							<br />
+							Edmonton
+						</span>
+					</div>
 					<a
 						href="/quote"
-						class="inline-flex items-center justify-center rounded-xl bg-stone-900 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-stone-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-900 focus-visible:ring-offset-2"
+						class="rounded-xl bg-slate-900 px-8 py-4 font-bold text-white shadow-lg transition-all hover:bg-lime-500"
 					>
-						Get a Free Quote
-					</a>
-
-					<a
-						href="/reviews"
-						class="inline-flex items-center justify-center rounded-xl border border-stone-300 bg-white px-6 py-3 text-base font-semibold text-stone-900 shadow-sm transition hover:bg-stone-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-900 focus-visible:ring-offset-2"
-					>
-						Read Reviews
-					</a>
-
-					<a
-						href="/contact"
-						class="inline-flex items-center justify-center rounded-xl bg-stone-100 px-6 py-3 text-base font-semibold text-stone-900 transition hover:bg-stone-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-900 focus-visible:ring-offset-2"
-					>
-						Contact Us
+						Claim Your Free Estimate
 					</a>
 				</div>
 			</div>
 
-			<!-- Right: Image + small caption -->
-			<aside class="lg:col-span-5">
-				<figure
-					class="rounded-3xl border border-stone-200 bg-white p-3 shadow-sm"
-				>
-					<figure
-						class="relative overflow-hidden rounded-2xl"
-					>
-						<!-- Replace with a real jobsite photo when ready -->
+			<div class="order-1 flex w-full flex-col gap-4 lg:order-2 lg:w-1/2">
+				<div class="flex items-end gap-4">
+					<img
+						src="/image-26.png"
+						alt="Interior painting excellence"
+						class="h-80 w-2/3 rounded-[3rem] border-4 border-white object-cover shadow-2xl"
+					/>
+					<img
+						src="/image-20.png"
+						alt="Vibrant color samples"
+						class="h-48 w-1/3 rounded-3xl border-2 border-white object-cover object-left shadow-lg"
+					/>
+				</div>
+				<div class="flex gap-4">
+					<img
+						src="/image-46.png"
+						alt="Clean jobsite prep"
+						class="h-64 w-1/3 rounded-3xl border-2 border-white object-cover shadow-lg"
+					/>
+					<div class="relative w-2/3">
 						<img
-							src="/why-choose-us-1.jpg"
-							alt="Professional painting service concept"
-							class="h-64 w-full object-cover sm:h-72 lg:h-96"
-							loading="lazy"
+							src="/image-38.png"
+							alt="Transformed living space"
+							class="h-64 w-full rounded-[3rem] border-4 border-white object-cover shadow-2xl"
 						/>
-						<!-- Soft overlay label -->
-						<figcaption
-							class="absolute bottom-3 left-3 rounded-full bg-white/90 px-4 py-2 text-sm font-semibold text-stone-900 shadow-sm"
+						<div
+							class="absolute -right-6 -bottom-6 flex h-32 w-32 rotate-12 items-center justify-center rounded-full border-4 border-white bg-lime-500 p-4 text-center shadow-xl"
 						>
-							Trusted residential painting in Edmonton
-						</figcaption>
-					</figure>
-
-					<div class="mt-4 rounded-2xl bg-stone-50 p-4">
-						<h3 class="text-base font-bold text-stone-900">
-							Planning a repaint?
-						</h3>
-						<p
-							class="mt-2 text-sm leading-relaxed text-stone-600"
-						>
-							We’ll help you choose a finish, confirm the
-							scope, and build a simple plan—so your
-							interior or exterior project feels easy.
-						</p>
-						<a
-							href="/services"
-							class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-stone-900 underline underline-offset-4 hover:text-stone-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-900 focus-visible:ring-offset-2"
-						>
-							Explore Services
-							<span aria-hidden="true">→</span>
-						</a>
+							<span class="text-[10px] leading-tight font-black text-white uppercase">Capital Region’s #1 Choice</span>
+						</div>
 					</div>
-				</figure>
-			</aside>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
-
-<style>
-	.xxg {
-		background-image: url('/hero-7.jpg');
-	}
-</style>

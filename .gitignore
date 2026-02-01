@@ -2,8 +2,7 @@ node_modules
 
 
 # Developer files
-/docs
-/sandbox
+
 
 # Output
 .output

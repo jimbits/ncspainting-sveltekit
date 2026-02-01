@@ -1,0 +1,82 @@
+[
+  {
+    "category": "layouts",
+    "items": [
+      "Layout2.svelte",
+      "Layout3.svelte",
+      "Layout1.svelte"
+    ]
+  },
+  {
+    "category": "marketing",
+    "items": [
+      "Marketing5.svelte",
+      "Marketing11.svelte",
+      "Marketing9.svelte",
+      "Marketing7.svelte",
+      "Marketing13.svelte",
+      "Marketing3.svelte",
+      "Marketing1.svelte",
+      "Marketing10.svelte",
+      "Marketing4.svelte",
+      "Marketing8.svelte",
+      "Marketing12.svelte",
+      "Marketing6.svelte",
+      "Marketing2.svelte"
+    ]
+  },
+  {
+    "category": "selection",
+    "items": [
+      "ChooseUs5.svelte",
+      "ChooseUs3.svelte",
+      "ChooseUs1.svelte",
+      "ChooseUs4.svelte",
+      "ChooseUs6.svelte",
+      "ChooseUs2.svelte"
+    ]
+  },
+  {
+    "category": "hero",
+    "items": [
+      "HeroDark1.svelte",
+      "Hero4.svelte",
+      "Hero6.svelte",
+      "Hero2.svelte",
+      "Hero5.svelte",
+      "Hero7.svelte",
+      "HeroDark2.svelte",
+      "Hero3.svelte",
+      "shite.svelte",
+      "Hero1.svelte"
+    ]
+  },
+  {
+    "category": "interior",
+    "items": [
+      "Interior7.svelte",
+      "Interior5.svelte",
+      "Interior9.svelte",
+      "Interior1.svelte",
+      "Interior3.svelte",
+      "Interior6.svelte",
+      "Interior4.svelte",
+      "Interior8.svelte",
+      "Interior2.svelte"
+    ]
+  },
+  {
+    "category": "services",
+    "items": [
+      "Services1.svelte"
+    ]
+  },
+  {
+    "category": "process",
+    "items": [
+      "Process1.svelte",
+      "Process3.svelte",
+      "process2.svelte"
+    ]
+  }
+]

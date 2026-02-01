@@ -1,6 +1,6 @@
 <script lang="ts" module>
 	import ButtonGroup from '$lib/components/forms/quote/ButtonGroup.svelte';
-	import { cn } from '$lib/helpers/cn';
+	import { cn } from '$lib/utils/cn';
 	import { Check } from 'lucide-svelte';
 	type ClickHandler<T extends HTMLElement> = (e: MouseEvent & { currentTarget: T }) => void;
 	type ContactMethod = '' | 'Phone' | 'Email' | 'Either';
@@ -32,7 +32,8 @@
 	const maxChars = 140;
 
 	function handleTextarea(event: InputEvent) {
-		const value = event.target.value;
+		const elm = event.target as HTMLTextAreaElement;
+		const value = elm.value;
 		if (value.length <= maxChars) {
 			formData.projectDescription = value;
 			charCount = value.length;
