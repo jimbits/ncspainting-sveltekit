@@ -7,12 +7,13 @@ Description: A section highlighting specialty and add-on painting services like 
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import { ChevronDown } from 'lucide-svelte';
 
 	let servicesWithTags = [
 		{
-			icon: 'archive',
 			title: 'Cabinet Painting / Refinishing',
-			description: 'Transform your kitchen or bathroom with a professional cabinet finish.',
+			description:
+				'A cost-effective way to completely transform your kitchen or bathroom. We use durable, high-adhesion paints for a smooth, long-lasting factory finish.',
 			image: '/image-12.png',
 			tags: [
 				'Kitchens',
@@ -27,9 +28,9 @@ Description: A section highlighting specialty and add-on painting services like 
 			randomizedTags: []
 		},
 		{
-			icon: 'paint-roller',
 			title: 'Trim and Door Painting',
-			description: 'Create crisp, clean lines and a polished look for your entire space.',
+			description:
+				'Nothing makes a room feel more complete than freshly painted trim and doors. We create crisp, clean lines for a truly polished and professional look.',
 			image: '/image-15.png',
 			tags: [
 				'Baseboards',
@@ -44,9 +45,9 @@ Description: A section highlighting specialty and add-on painting services like 
 			randomizedTags: []
 		},
 		{
-			icon: 'fence',
 			title: 'Deck and Fence Staining',
-			description: 'Protect and beautify your outdoor wood structures from Alberta weather.',
+			description:
+				'Protect and beautify your outdoor wood structures. Our staining process prevents UV damage and water intrusion, extending the life of your deck or fence.',
 			image: '/image-24.png',
 			tags: [
 				'Wood Protection',
@@ -60,9 +61,9 @@ Description: A section highlighting specialty and add-on painting services like 
 			randomizedTags: []
 		},
 		{
-			icon: 'wrench',
 			title: 'Drywall Patching & Repairs',
-			description: 'We handle light patching and surface prep for a flawless final paint coat.',
+			description:
+				'From minor dings to larger holes, we handle light drywall repairs and surface preparation to ensure your final paint coat is absolutely flawless.',
 			image: '/image-46.png',
 			tags: [
 				'Hole Repair',
@@ -76,9 +77,9 @@ Description: A section highlighting specialty and add-on painting services like 
 			randomizedTags: []
 		},
 		{
-			icon: 'building',
 			title: 'Small Commercial Touch-Ups',
-			description: 'Ideal for offices and retail spaces needing a quick, professional refresh.',
+			description:
+				'Ideal for offices, retail spaces, and other commercial properties needing a quick and professional refresh without disrupting your business operations.',
 			image: '/image-50.png',
 			tags: [
 				'Office Painting',
@@ -92,9 +93,9 @@ Description: A section highlighting specialty and add-on painting services like 
 			randomizedTags: []
 		},
 		{
-			icon: 'plus',
 			title: 'And More...',
-			description: 'Have a special project? Ask us for a quote to see how we can help.',
+			description:
+				'Have a special project not listed here? From garage floors to unique feature walls, ask us for a quote to see how we can bring your vision to life.',
 			image: '/image-1.png',
 			tags: [
 				'Garage Floors',
@@ -109,14 +110,7 @@ Description: A section highlighting specialty and add-on painting services like 
 		}
 	];
 
-	onMount(async () => {
-		try {
-			const lucide = await import('lucide-svelte');
-			lucide.createIcons();
-		} catch (error) {
-			console.error('Failed to load lucide-svelte:', error);
-		}
-
+	onMount(() => {
 		// Randomize tags for each service on mount
 		servicesWithTags = servicesWithTags.map((service) => {
 			const shuffled = [...service.tags].sort(() => 0.5 - Math.random());
@@ -133,8 +127,9 @@ Description: A section highlighting specialty and add-on painting services like 
 			<div class="text-center lg:text-left">
 				<h2 class="text-5xl leading-tight font-bold text-white sm:text-6xl">Additional Painting Services</h2>
 				<p class="mt-6 text-xl text-gray-400">
-					Need more than just walls? We also handle specialty painting and add-on services to give your Edmonton home a
-					complete, polished look.
+					Need more than just walls? We also handle specialty painting and add-on services to give your home a complete,
+					polished look. Dents, dings, and nail pops—fixed fast. We handle drywall repair, then finish strong with
+					smooth paint, sharp trim & door lines, and optional eco/low-odor paint for a more comfortable home.
 				</p>
 			</div>
 			<img
@@ -152,11 +147,7 @@ Description: A section highlighting specialty and add-on painting services like 
 				>
 					<img src={service.image} alt={service.title} class="h-48 w-full object-cover" />
 					<div class="flex flex-1 flex-col p-8">
-						<i
-							data-lucide={service.icon}
-							class="h-12 w-12 text-cyan-500 transition-colors group-hover:text-cyan-400"
-						></i>
-						<h3 class="mt-6 mb-3 text-2xl font-bold text-white">{service.title}</h3>
+						<h3 class="mt-4 mb-3 text-2xl font-bold text-white">{service.title}</h3>
 						<p class="flex-1 text-gray-400">{service.description}</p>
 						<div class="mt-4 flex flex-wrap gap-2">
 							{#each service.randomizedTags as tag}
@@ -178,10 +169,9 @@ Description: A section highlighting specialty and add-on painting services like 
 						<details class="group rounded-lg bg-gray-900/50 p-4" name="faq">
 							<summary class="flex cursor-pointer list-none items-center justify-between font-semibold text-white">
 								<span>Can you refinish kitchen cabinets?</span>
-								<i
-									data-lucide="chevron-down"
-									class="h-5 w-5 text-gray-400 transition-transform duration-300 group-open:rotate-180"
-								></i>
+								<div class="h-5 w-5 text-gray-400 transition-transform duration-300 group-open:rotate-180">
+									<ChevronDown />
+								</div>
 							</summary>
 							<div class="mt-4 border-t border-white/10 pt-4 text-gray-300">
 								<p>
@@ -193,10 +183,9 @@ Description: A section highlighting specialty and add-on painting services like 
 						<details class="group rounded-lg bg-gray-900/50 p-4" name="faq">
 							<summary class="flex cursor-pointer list-none items-center justify-between font-semibold text-white">
 								<span>Do you do small repairs before painting?</span>
-								<i
-									data-lucide="chevron-down"
-									class="h-5 w-5 text-gray-400 transition-transform duration-300 group-open:rotate-180"
-								></i>
+								<div class="h-5 w-5 text-gray-400 transition-transform duration-300 group-open:rotate-180">
+									<ChevronDown />
+								</div>
 							</summary>
 							<div class="mt-4 border-t border-white/10 pt-4 text-gray-300">
 								<p>
@@ -208,10 +197,9 @@ Description: A section highlighting specialty and add-on painting services like 
 						<details class="group rounded-lg bg-gray-900/50 p-4" name="faq">
 							<summary class="flex cursor-pointer list-none items-center justify-between font-semibold text-white">
 								<span>How is the cost of these services determined?</span>
-								<i
-									data-lucide="chevron-down"
-									class="h-5 w-5 text-gray-400 transition-transform duration-300 group-open:rotate-180"
-								></i>
+								<div class="h-5 w-5 text-gray-400 transition-transform duration-300 group-open:rotate-180">
+									<ChevronDown />
+								</div>
 							</summary>
 							<div class="mt-4 border-t border-white/10 pt-4 text-gray-300">
 								<p>
@@ -223,19 +211,24 @@ Description: A section highlighting specialty and add-on painting services like 
 					</div>
 				</div>
 				<div class="flex flex-col items-start justify-center rounded-2xl bg-gray-900 p-8">
-					<h3 class="text-2xl font-bold text-white">Find out more about NCS Interior Painting Services</h3>
+					<h3 class="text-2xl font-bold text-white">One crew, four upgrades</h3>
 					<p class="mt-2 mb-4 text-gray-400">
-						Bundle these services with your main project for a complete home refresh. Let's discuss your needs.
+						Patch and smooth drywall, modernize cabinets, brighten trim & doors, and opt for eco paint—a bundled refresh
+						that boosts the look of your home fast.. Serving Edmonton plus St. Albert, Fort Saskatchewan, and Sherwood
+						Park.
 					</p>
-					<div class="flex items-start gap-4">
+					<div class="flex items-center gap-4">
+						<a
+							href="/services/interior-painting"
+							class="rounded-xl bg-cyan-500 px-8 py-4 font-semibold text-white transition hover:bg-cyan-600"
+						>
+							Talk to a Painter
+						</a>
 						<a
 							href="#quote-form"
-							class="rounded-full bg-cyan-500 px-8 py-4 font-semibold text-white transition hover:bg-cyan-600"
+							class="rounded-xl bg-cyan-500/10 px-8 py-4 font-semibold text-white transition hover:bg-cyan-500/20"
 						>
-							Request a Free Quote
-						</a>
-						<a href="/services/interior-painting" class="text-cyan-400 transition hover:text-cyan-300">
-							Call To Action
+							Request Pricing
 						</a>
 					</div>
 				</div>
