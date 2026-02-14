@@ -1,61 +1,113 @@
 # Painters in Fort Saskatchewan
 
-## Page Summary
-Location page for Fort Saskatchewan with unique local copy, service highlights, and proof. Avoid thin content.
+> **Primary keyword:** painters Fort Saskatchewan
+> **Secondary keywords:** house painters Fort Saskatchewan, painting company Fort Saskatchewan, interior painting Fort Saskatchewan, exterior painting Fort Saskatchewan
+> **URL:** `/painters-fort-saskatchewan`
+> **Meta Title:** Painters Fort Saskatchewan | NCS Painting
+> **Meta Description:** Residential painting services for Fort Saskatchewan homes. Interior and exterior painting with clean prep and clear quotes.
 
-## SEO Targets
-- Primary: painters Fort Saskatchewan
-- Secondary: house painters Fort Saskatchewan, painting company Fort Saskatchewan
+---
 
-## URL
-- /painters-fort-saskatchewan
+## Dependable painters serving Fort Saskatchewan
 
-## Suggested Meta
-- Title: Painters Fort Saskatchewan | NCS Painting
-- Description: Residential painting services for Fort Saskatchewan homes. Interior and exterior painting with clean prep and clear quotes.
+If you’re looking for **painters in Fort Saskatchewan**, you want results that look clean and hold up over time. NCS Painting provides residential painting services built around the fundamentals that matter most: **prep-first work, premium materials, tidy job sites, and clear communication**.
 
-## H1
-- Painters in Fort Saskatchewan
+Whether you’re repainting an older interior, modernizing trim and doors, or refreshing your exterior for better curb appeal, we tailor the scope to your home and the conditions of the surfaces being painted.
 
-## Section Outline and Draft Content
+**CTA:** Request a Free Quote • Call **780-722-5577**
 
-### 1) Hero
-- Tagline: Trusted painters serving Fort Saskatchewan with clean prep and dependable schedules.
-- CTAs: Request a Free Quote / Call the Painter
+---
 
-### 2) Services Offered
-- Interior painting
-- Exterior painting
-- Cabinet painting
-- Deck and fence staining
+## Services we offer in Fort Saskatchewan
 
-### 3) Why Homeowners Choose Us
-- Prep-first approach
-- Tidy job sites
-- Clear communication
+### Interior painting
 
-### 4) Fort Saskatchewan Project Proof
-- 4 to 6 images with Fort Saskatchewan captions
-- Link: /projects
+Walls, ceilings, trim, doors, hallways, stairwells, closets, and basement spaces—finished with crisp edges and consistent coverage.
 
-### 5) FAQs (Fort Saskatchewan)
-- Do you provide free estimates in Fort Saskatchewan?
-- What is included in your prep work?
-- How soon can you start?
+### Exterior painting
 
-### 6) Service Areas
-- Fort Saskatchewan plus Edmonton, St. Albert, Sherwood Park
+Siding, stucco, wood trim, doors, soffits, and fascia—using coatings chosen for durability and color retention in Alberta weather.
 
-### 7) CTA Block
-- Request a Free Quote
-- Call the Painter
+### Cabinet painting (if offered)
 
-## Internal Links
-- /interior-painting-edmonton
-- /exterior-painting-edmonton
-- /contact
+A high-impact update for kitchens and bathrooms when you want a refreshed look without replacing cabinetry.
 
-## Suggested Images (static)
-- /image-36.png
-- /image-37.png
-- /image-39.png
+### Deck and fence staining (if offered)
+
+Protect outdoor wood surfaces and keep them looking great season after season.
+
+---
+
+## Why Fort Saskatchewan homeowners choose NCS Painting
+
+- **Prep-first approach** to improve adhesion and reduce early paint failure
+- **Tidy work areas** with protection for floors, furniture, and fixtures
+- **Clear communication** on scope, schedule, and next steps
+- **Premium coatings** for better durability and smoother finish quality
+- **Finishing details** you can see—clean trim lines and sharp corners
+
+A professional paint job should feel stress-free, not chaotic. We keep the process organized and respectful of your home.
+
+---
+
+## Our painting process (what happens next)
+
+1. **Estimate + inspection:** Confirm surfaces, prep needs, and paint selections.
+2. **Prep + protection:** Cover areas, patch/sand/caulk, prime as required.
+3. **Paint + detail work:** Apply even coats, keep edges clean, confirm sheen consistency.
+4. **Walkthrough + cleanup:** Touch-ups, cleanup, and final confirmation.
+
+---
+
+## Fort Saskatchewan project proof
+
+Add a grid of 4–6 examples with local captions:
+
+- “Interior repaint — Fort Saskatchewan (living room + hallway)”
+- “Exterior refresh — Fort Saskatchewan (trim + siding repaint)”
+- “Bedroom repaint — Fort Saskatchewan (walls + doors)”
+
+**Link:** `/projects`
+
+---
+
+## FAQs (Fort Saskatchewan)
+
+### Do you provide free estimates in Fort Saskatchewan?
+
+Yes—request a quote and we’ll schedule an estimate appointment.
+
+### What is included in your prep work?
+
+Protection, patching/sanding, caulking where required, and priming to improve adhesion and coverage are typical prep steps.
+
+### How soon can you start?
+
+Start dates depend on current bookings and seasonality. We’ll give you clear scheduling options during the estimate.
+
+---
+
+## Service areas
+
+Fort Saskatchewan plus:
+
+- Edmonton
+- St. Albert
+- Sherwood Park
+
+---
+
+## Get a quote for painting in Fort Saskatchewan
+
+If you want clean results, durable finishes, and a reliable process, we’re ready to help.
+
+**Primary CTA:** Request a Free Quote
+**Secondary CTA:** Call **780-722-5577**
+
+---
+
+## Helpful links
+
+- Interior services: `/interior-painting-edmonton`
+- Exterior services: `/exterior-painting-edmonton`
+- Contact: `/contact`

@@ -2,8 +2,11 @@
 	<div class="container mx-auto px-6">
 		<div class="grid gap-12 lg:grid-cols-2">
 			<div class="flex flex-col justify-center">
-				<span class="mb-4 text-sm font-semibold tracking-widest text-cyan-600 uppercase">The Eco Advantage</span>
-				<h2 class="mb-12 text-7xl font-extrabold tracking-tight text-pretty">Eco Friendly Paint Coverings</h2>
+				<span class="mb-4 text-sm font-semibold tracking-widest text-lime-600 uppercase">The Eco Advantage</span>
+				<h2 class="mb-12 text-7xl font-extrabold tracking-tight text-pretty">
+					Eco <span class="text-lime-500">Friendly</span>
+					Paint Coverings
+				</h2>
 
 				<div class="space-y-8">
 					<div class="border-l-2 border-stone-700 pl-6 transition-colors hover:border-cyan-600">
@@ -25,7 +28,7 @@
 				<div class="mt-12">
 					<a
 						href="/eco-friendly"
-						class="text-sm font-bold tracking-widest text-cyan-600 uppercase hover:text-slate-900"
+						class="text-sm font-bold tracking-widest text-lime-600 uppercase hover:text-slate-900"
 					>
 						View full specs →
 					</a>

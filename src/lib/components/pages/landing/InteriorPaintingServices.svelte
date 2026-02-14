@@ -4,8 +4,29 @@
 
 <section id="interior-painting" class="relative isolate overflow-hidden py-16 md:py-24">
 	<!-- Background -->
-	<div class="absolute inset-0 -z-10 bg-slate-50"></div>
+	<!-- <div class="absolute inset-0 -z-10 bg-slate-50"></div> -->
+	<div class="absolute inset-0 -z-10 overflow-hidden bg-white">
+		<svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" class="h-full w-full object-cover">
+			<defs>
+				<filter id="hero-blur" x="-50%" y="-50%" width="200%" height="200%">
+					<feGaussianBlur stdDeviation="80" />
+				</filter>
+			</defs>
 
+			<ellipse cx="720" cy="-100" rx="800" ry="400" class="fill-lime-50/40" filter="url(#hero-blur)" />
+			<circle cx="400" cy="0" r="300" class="fill-lime-500/10" filter="url(#hero-blur)" />
+
+			<ellipse cx="720" cy="1000" rx="900" ry="500" class="fill-lime-200/30" filter="url(#hero-blur)" />
+			<circle cx="1100" cy="900" r="400" class="fill-lime-400/20" filter="url(#hero-blur)" />
+
+			<circle cx="720" cy="450" r="400" fill="#ffffff" fill-opacity="0.4" filter="url(#hero-blur)" />
+		</svg>
+
+		<div
+			class="absolute inset-0"
+			style="background: linear-gradient(to bottom, transparent, rgba(247, 254, 231, 0.2), transparent);"
+		></div>
+	</div>
 	<div class="container mx-auto px-4">
 		<!-- Section Header -->
 		<header class="mb-12 text-center">
@@ -27,11 +48,11 @@
 			<!-- Large Feature Image - spans 2 cols, 2 rows -->
 			<div class="group relative col-span-1 row-span-2 overflow-hidden rounded-3xl md:col-span-2 lg:col-span-2">
 				<img
-					src="/image-26.png"
+					src="/image-41.png"
 					alt="Professional interior painting in Edmonton"
 					class="h-full min-h-[360px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
 				/>
-				<div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+				<div class="absolute inset-0 bg-linear-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
 				<div class="absolute bottom-0 left-0 p-6 md:p-8">
 					<h3 class="mb-2 text-2xl font-bold text-white md:text-3xl">Transform Your Space</h3>
 					<p class="max-w-sm text-sm text-slate-200">

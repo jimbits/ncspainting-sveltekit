@@ -30,7 +30,7 @@
 			<circle cx="720" cy="450" r="400" fill="#FFFFFF" fill-opacity="0.25" filter="url(#hero-blur)" />
 		</svg>
 
-		<div class="0 absolute inset-0 bg-gradient-to-b from-transparent via-orange-50 to-transparent"></div>
+		<div class="0 absolute inset-0 bg-linear-to-b from-transparent via-orange-50 to-transparent"></div>
 	</div>
 
 	<!-- CONTENT -->
@@ -51,16 +51,16 @@
 					</p>
 
 					<!-- Bullet Points -->
-					<ul class=" mb-16 grid max-w-2xl gap-y-5 sm:grid-cols-2">
+					<ul class=" mx-auto grid w-fit max-w-2xl gap-y-5 sm:mb-12 sm:grid-cols-2 md:mb-16 lg:w-full">
 						{#each benefits as benefit}
-							<li class="flex items-start gap-3">
+							<li class="0 flex items-center gap-3">
 								<span
-									class=" inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-400 text-white ring-1 ring-white/20"
+									class=" inline-flex min-h-6 min-w-6 items-center justify-center rounded-full bg-emerald-400 text-white ring-1 ring-white"
 									aria-hidden="true"
 								>
 									✓
 								</span>
-								<span class="text-sm font-medium text-slate-700 sm:text-base">{benefit}</span>
+								<span class="text-sm font-medium text-slate-700 sm:text-base/5">{benefit}</span>
 							</li>
 						{/each}
 					</ul>
@@ -69,13 +69,13 @@
 					<div class="  flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
 						<a
 							href="/quote"
-							class="w-full transform rounded-2xl bg-sky-500 px-10 py-5 font-bold text-white shadow-2xl transition-colors delay-100 duration-300 ease-in-out hover:text-slate-950 sm:w-auto"
+							class="w-full transform rounded-2xl bg-sky-400 px-10 py-5 font-bold text-white shadow-2xl transition-colors delay-100 duration-300 ease-in-out hover:bg-teal-500 sm:w-auto"
 						>
 							Get a Free Quote →
 						</a>
 						<a
 							href="tel:17807225577"
-							class=" w-full rounded-2xl bg-emerald-500 px-10 py-5 font-bold text-white shadow-sm transition-colors delay-100 duration-300 ease-in-out hover:text-neutral-950 hover:shadow-md sm:w-auto"
+							class=" w-full rounded-2xl bg-emerald-500 px-10 py-5 font-bold text-white shadow-sm transition-colors delay-100 duration-300 ease-in-out hover:bg-cyan-500 hover:shadow-md sm:w-auto"
 						>
 							Call 780-722-5577
 						</a>
@@ -98,7 +98,7 @@
 					</div>
 
 					<div
-						class="absolute -top-10 -right-10 z-20 hidden -rotate-3 transform cursor-default rounded-3xl bg-orange-400 p-8 text-orange-50 shadow-2xl transition-transform text-shadow-2xs hover:rotate-0 md:block"
+						class="absolute -top-10 -right-10 z-20 hidden -rotate-3 transform cursor-default rounded-3xl bg-orange-400 p-8 text-cyan-50 shadow-2xl transition-transform hover:rotate-0 md:block"
 					>
 						<div class="text-4xl leading-none font-black">35+</div>
 						<div class="mt-1 text-xs font-bold tracking-widest uppercase">
@@ -108,27 +108,34 @@
 						</div>
 					</div>
 
-					<aside class="mt-8 flex flex-col items-center">
-						<header
-							class="mb-3 inline-flex items-center gap-2 rounded-full bg-orange-200 px-3 py-1 text-xs font-bold tracking-widest text-amber-900 uppercase"
-						>
-							<span class="relative flex h-2 w-2">
-								<span
-									class="absolute inline-flex h-full w-full animate-ping rounded-full bg-orange-400 opacity-75"
-								></span>
-								<span class="relative inline-flex h-2 w-2 rounded-full bg-orange-500"></span>
-							</span>
-							<p>Local Service Area</p>
-						</header>
-						<ul class="  flex items-center text-sm font-semibold tracking-tight uppercase">
-							<li><span>Edmonton</span></li>
-							<li class="mx-2"><span class="text-gray-600"><Plus class="h-3 w-3" /></span></li>
-							<li><span>Sherwood Park</span></li>
-							<li class="mx-2"><span class="text-gray-600"><Plus class="h-3 w-3" /></span></li>
-							<li><span>Fort Saskatchewan</span></li>
-							<li class="mx-2"><span class="text-gray-600"><Plus class="h-3 w-3" /></span></li>
-							<li><span>St Albert</span></li>
-						</ul>
+					<aside class="mt-8 overflow-hidden rounded-2xl bg-white/35">
+						<div class=" bg-gray-transparant flex flex-col items-center rounded-xl p-3">
+							<header
+								class="  inline-flex items-center gap-2 rounded-full py-1 text-sm font-bold tracking-widest uppercase"
+							>
+								<!-- <span class="relative flex h-2 w-2">
+									<span
+										class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"
+									></span>
+									<span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+								</span> -->
+								<h3 class="text-lg">Service Area</h3>
+							</header>
+							<ul
+								class=" grid grid-cols-3 justify-items-center gap-x-4 gap-y-1 text-sm font-semibold tracking-tight text-gray-500 uppercase md:grid-cols-3"
+							>
+								<li>Edmonton</li>
+
+								<li>Sherwood Park</li>
+
+								<li>Beaumont</li>
+
+								<li class="col-span-3">
+									<span class="pr-5">Saint Albert</span>
+									<span>Fort Saskatchewan</span>
+								</li>
+							</ul>
+						</div>
 					</aside>
 				</div>
 			</div>

@@ -12,7 +12,6 @@
 
 		<div class="w-full lg:w-1/2">
 			<div class="mb-10">
-				<span class="mb-3 block text-xs font-bold tracking-widest text-red-600 uppercase">Interior Services</span>
 				<h2 class="mb-6 text-5xl font-extrabold text-slate-900">Interior Home Painting</h2>
 				<p class="text-lg leading-relaxed text-slate-600">
 					NCS Painting provides premium interior house painting to <strong>

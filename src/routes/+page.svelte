@@ -7,8 +7,9 @@
 
 	import EcoFriendly from '$lib/components/pages/landing/EcoFriendly.svelte';
 	import LetUsHelp from '$lib/components/pages/landing/LetUsHelp.svelte';
-	import ExteriorPaintingServices from '$lib/examples/ExteriorPaintingServices.svelte';
+
 	import AdditionalPaintingServices from '$lib/examples/AdditionalPaintingServices.svelte';
+	import ExteriorPaintingServices from '$lib/components/pages/landing/ExteriorPaintingServices.svelte';
 </script>
 
 <Hero />

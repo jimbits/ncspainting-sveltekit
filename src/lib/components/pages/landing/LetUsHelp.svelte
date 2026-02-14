@@ -2,7 +2,6 @@
 <section class="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-24 lg:px-8" aria-labelledby="services-heading">
 	<!-- Section Header -->
 	<div class="mb-12 text-center md:mb-16">
-		<p class="mb-4 text-sm font-medium tracking-wider text-stone-600 uppercase">Services</p>
 		<h2 id="services-heading" class="mb-6 text-4xl leading-tight font-bold text-stone-900 md:text-5xl lg:text-6xl">
 			What are you painting?
 		</h2>

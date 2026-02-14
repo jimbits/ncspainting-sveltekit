@@ -1,61 +1,113 @@
 # Painters in St. Albert
 
-## Page Summary
-Location page for St. Albert with unique local copy, service highlights, and proof. Avoid thin content.
+> **Primary keyword:** painters St. Albert
+> **Secondary keywords:** house painters St. Albert, painting company St. Albert, interior painting St. Albert, exterior painting St. Albert
+> **URL:** `/painters-st-albert`
+> **Meta Title:** Painters St. Albert | NCS Painting
+> **Meta Description:** Residential painting services for St. Albert homeowners. Interior and exterior painting with clean prep and clear quotes.
 
-## SEO Targets
-- Primary: painters St. Albert
-- Secondary: house painters St. Albert, painting company St. Albert
+---
 
-## URL
-- /painters-st-albert
+## Trusted painters for St. Albert homeowners
 
-## Suggested Meta
-- Title: Painters St. Albert | NCS Painting
-- Description: Residential painting services for St. Albert homeowners. Interior and exterior painting with clean prep and clear quotes.
+When you’re searching for **painters in St. Albert**, you’re likely balancing a few priorities: the work needs to look great, the crew needs to be respectful in your home, and the finish needs to last. NCS Painting delivers interior and exterior painting services for St. Albert homes with a focus on **clear scopes, careful prep, and professional finishing details**.
 
-## H1
-- Painters in St. Albert
+From refreshing walls and ceilings to repainting trim and doors or updating an aging exterior, we keep the process simple: protect the space, prep properly, apply premium coatings, and finish clean.
 
-## Section Outline and Draft Content
+**CTA:** Request a Free Quote • Call **780-722-5577**
 
-### 1) Hero
-- Tagline: Local painters serving St. Albert with clean prep and professional finishes.
-- CTAs: Request a Free Quote / Call the Painter
+---
 
-### 2) Services Offered
-- Interior painting
-- Exterior painting
-- Cabinet painting
-- Deck and fence staining
+## Services offered in St. Albert
 
-### 3) Why Homeowners Choose Us
-- Clear scopes and timelines
-- Clean job sites
-- Local crews (if verified)
+### Interior painting
 
-### 4) St. Albert Project Proof
-- 4 to 6 images with St. Albert captions
-- Link: /projects
+Walls, ceilings, trim, doors, closets, hallways, and stairwells—completed with tidy masking and crisp lines.
 
-### 5) FAQs (St. Albert)
-- Do you provide free estimates in St. Albert?
-- How soon can you schedule an estimate?
-- What is included in prep?
+### Exterior painting
 
-### 6) Service Areas
-- St. Albert plus Edmonton, Fort Saskatchewan, Sherwood Park
+Siding, stucco, wood trim, doors, soffits, and fascia—using coating systems suited to Alberta’s seasonal swings.
 
-### 7) CTA Block
-- Request a Free Quote
-- Call the Painter
+### Cabinet painting (if offered)
 
-## Internal Links
-- /interior-painting-edmonton
-- /exterior-painting-edmonton
-- /contact
+Modernize kitchens and bathrooms with a durable cabinet finish and a clean, updated look.
 
-## Suggested Images (static)
-- /image-27.png
-- /image-28.png
-- /image-29.png
+### Deck and fence staining (if offered)
+
+Protect outdoor wood surfaces and improve curb appeal with a quality stain or protective coating.
+
+---
+
+## Why choose NCS Painting in St. Albert
+
+- **Clear scopes and timelines** so expectations are simple and upfront
+- **Prep-first workmanship** (patch/sand/caulk/prime as needed)
+- **Clean job sites** with floor protection and daily tidy-ups
+- **Premium materials** for smoother coverage and better durability
+- **Communication that’s easy**—you’ll know what’s happening and when
+
+We aim for results that hold up to everyday life—kids, pets, and busy schedules included.
+
+---
+
+## What your painting project looks like
+
+1. **Estimate + planning:** Confirm rooms/surfaces, prep needs, and paint selections.
+2. **Prep + protection:** Cover floors, protect fixtures, patch/sand/prime.
+3. **Paint + detail work:** Even coats, consistent sheen, sharp edges.
+4. **Walkthrough + cleanup:** Touch-ups, cleanup, and confirmation of the finished work.
+
+---
+
+## St. Albert project proof
+
+Add a proof section with 4–6 tiles and local captions:
+
+- “Interior repaint — St. Albert (main floor walls + trim)”
+- “Exterior refresh — St. Albert (stucco + trim repaint)”
+- “Basement repaint — St. Albert (walls + ceilings)”
+
+**Link:** `/projects`
+
+---
+
+## FAQs (St. Albert)
+
+### Do you provide free estimates in St. Albert?
+
+Yes—request a quote and we’ll schedule a walkthrough estimate.
+
+### How soon can you schedule an estimate?
+
+Scheduling varies by season, but we’ll offer the next available window and keep communication clear.
+
+### What is included in prep?
+
+Prep commonly includes protection, patching/sanding, caulking (where required), and priming for adhesion and even coverage.
+
+---
+
+## Service areas
+
+St. Albert plus:
+
+- Edmonton
+- Sherwood Park
+- Fort Saskatchewan
+
+---
+
+## Request a free quote in St. Albert
+
+If you want a professional finish with careful prep and a tidy work process, let’s get your project scoped properly.
+
+**Primary CTA:** Request a Free Quote
+**Secondary CTA:** Call **780-722-5577**
+
+---
+
+## Helpful links
+
+- Interior services: `/interior-painting-edmonton`
+- Exterior services: `/exterior-painting-edmonton`
+- Contact: `/contact`

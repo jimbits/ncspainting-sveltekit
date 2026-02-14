@@ -43,11 +43,12 @@
 						Interior & exterior painting with clean prep, clear communication, and a finish you’ll love.
 					</p>
 
-					<ul class="mb-10 grid max-w-lg gap-3 text-left sm:mx-auto lg:mx-0">
+					<ul class=" mb-10 grid max-w-lg gap-3 text-left sm:mx-auto lg:mx-0">
 						{#each benefits as benefit}
 							<li class="flex items-start gap-3">
-								<Check class="mt-1 h-5 w-5 flex-shrink-0 text-orange-500" />
+								<Check class="mt-1 h-5 w-5  shrink-0 text-red-500" />
 								<span class="font-medium text-stone-700">{benefit}</span>
+								dsf
 							</li>
 						{/each}
 					</ul>

@@ -1,32 +1,10 @@
 <section id="why-choose-us" class="relative isolate overflow-hidden py-16 md:py-24">
-	<div class="absolute inset-0 -z-10 overflow-hidden" style="background-color: #f7fee7;">
-		<svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" class="h-full w-full object-cover">
-			<defs>
-				<filter id="hero-blur" x="-50%" y="-50%" width="200%" height="200%">
-					<feGaussianBlur stdDeviation="80" />
-				</filter>
-			</defs>
-
-			<ellipse cx="720" cy="-100" rx="800" ry="400" class="fill-lime-300/40" filter="url(#hero-blur)" />
-			<circle cx="400" cy="0" r="300" class="fill-lime-500/10" filter="url(#hero-blur)" />
-
-			<ellipse cx="720" cy="1000" rx="900" ry="500" class="fill-lime-300/30" filter="url(#hero-blur)" />
-			<circle cx="1100" cy="900" r="400" class="fill-lime-400/20" filter="url(#hero-blur)" />
-
-			<circle cx="720" cy="450" r="400" fill="#ffffff" fill-opacity="0.4" filter="url(#hero-blur)" />
-		</svg>
-
-		<div
-			class="absolute inset-0"
-			style="background: linear-gradient(to bottom, transparent, rgba(247, 254, 231, 0.2), transparent);"
-		></div>
-	</div>
 	<div class="container mx-auto px-4">
 		<div class="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
 			<div class="order-2 w-full lg:order-1 lg:w-1/2">
 				<header class="mb-12">
 					<span
-						class="mb-4 inline-block rounded-full bg-lime-100 px-4 py-1 text-xs font-bold tracking-widest text-lime-700 uppercase"
+						class="mb-4 inline-block rounded-full bg-lime-100 px-4 py-1 text-xs font-bold tracking-widest text-lime-600 uppercase"
 					>
 						The NCS Difference
 					</span>
