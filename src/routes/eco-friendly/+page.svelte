@@ -1,8 +1,6 @@
 <script>
-	import { onMount } from 'svelte';
-
 	let activeFaq = $state(null);
-
+	import Logo from '$lib/assets/brand/Logo.svelte';
 	const faqs = [
 		{
 			q: "What's the difference between low‑VOC and zero‑VOC paint?",
@@ -23,6 +21,13 @@
 	];
 </script>
 
+<figure class="flex items-center gap-2 p-4">
+	<Logo class="h-10 w-10" />
+	<figcaption>
+		<h3 class="text-3xl font-bold">NCS Painting</h3>
+		<p class="text-xs/2">roll on quality</p>
+	</figcaption>
+</figure>
 <div class="bg-white">
 	<!-- Hero Section -->
 	<section class="relative flex min-h-screen items-center bg-white px-6 py-32">
@@ -359,6 +364,7 @@
 						For exteriors, "eco" still needs durability. We prioritize high‑performance waterborne acrylic systems and
 						correct prep to improve longevity.
 					</p>
+					<p></p>
 					<ul class="space-y-5">
 						<li class="flex items-start gap-4 text-lg text-zinc-700">
 							<svg

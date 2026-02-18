@@ -1,6 +1,6 @@
 <script>
-	import { MapPin, Menu, Phone } from 'lucide-svelte';
 	import Logo from '$lib/assets/icons/logo.svg?component';
+	import { MapPin, Menu, Phone } from 'lucide-svelte';
 </script>
 
 <header>

@@ -210,8 +210,26 @@
 
 			<!-- Projects Stat -->
 			<div class="col-span-1 flex flex-col items-center justify-center rounded-3xl bg-white p-6 text-center shadow-lg">
-				<span class="text-5xl font-black text-slate-900">500+</span>
-				<span class="mt-1 text-sm font-medium text-slate-500">Projects Completed</span>
+				<p class="text-5xl font-black text-slate-900">Also Serving</p>
+
+				<ul class=" ">
+					<li>
+						<a class="mt-1 text-lg font-medium text-slate-900" href="/locations/fort-saskatchewan-painters">
+							Fort Saskatchewan
+						</a>
+					</li>
+					<li>
+						<a class="mt-1 text-lg font-medium text-slate-900" href="/locations/sherwood-park-painters">
+							Sherwood Park
+						</a>
+					</li>
+					<li>
+						<a class="mt-1 text-lg font-medium text-slate-900" href="/locations/beaumont-painters">Beaumont</a>
+					</li>
+					<li>
+						<a class="mt-1 text-lg font-medium text-slate-900" href="/locations/st-albert-painters">St Albert</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 

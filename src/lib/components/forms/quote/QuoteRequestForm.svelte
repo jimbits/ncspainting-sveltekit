@@ -2,6 +2,9 @@
 	import ButtonGroup from '$lib/components/forms/quote/ButtonGroup.svelte';
 	import { cn } from '$lib/utils/cn';
 	import { Check } from 'lucide-svelte';
+	type QuoteFormProps = {
+		class?: string;
+	};
 	type ClickHandler<T extends HTMLElement> = (e: MouseEvent & { currentTarget: T }) => void;
 	type ContactMethod = '' | 'Phone' | 'Email' | 'Either';
 	type ProjectType = '' | 'interior' | 'exterior' | 'other';
@@ -27,7 +30,7 @@
 		projectDescription: '',
 		serviceArea: ''
 	});
-	let { class: className } = $props();
+	let { class: className }: QuoteFormProps = $props();
 	let charCount = $state(0);
 	const maxChars = 140;
 
