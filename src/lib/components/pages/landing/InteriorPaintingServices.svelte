@@ -2,9 +2,26 @@
 	// Interior Painting Services - Bento Box Layout
 </script>
 
+<!-- Service Locations -->
+<!--
+
+<ul class="mx-auto grid w-4/5 grid-cols-3 place-content-center bg-blue-400 text-center">
+					<li>
+						<a class=" font-medium text-white/60" href="/locations/st-albert-painters">St Albert</a>
+					</li>
+					<li>
+						<a class=" font-medium text-white/60" href="/locations/sherwood-park-painters">Sherwood Park</a>
+					</li>
+					<li>
+						<a class=" font-medium text-white/60" href="/locations/beaumont-painters">Beaumont</a>
+					</li>
+					<li class="col-span-3">
+						<a class=" font-medium text-white/60" href="/locations/fort-saskatchewan-painters">Fort Saskatchewan</a>
+					</li>
+				</ul> -->
 <section id="interior-painting" class="relative isolate overflow-hidden py-16 md:py-24">
 	<!-- Background -->
-	<!-- <div class="absolute inset-0 -z-10 bg-slate-50"></div> -->
+	<!-- <div class="absolute inset-0 -z-10 bg-slate-50"></div>
 	<div class="absolute inset-0 -z-10 overflow-hidden bg-white">
 		<svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" class="h-full w-full object-cover">
 			<defs>
@@ -13,11 +30,11 @@
 				</filter>
 			</defs>
 
-			<ellipse cx="720" cy="-100" rx="800" ry="400" class="fill-lime-50/40" filter="url(#hero-blur)" />
-			<circle cx="400" cy="0" r="300" class="fill-lime-500/10" filter="url(#hero-blur)" />
+			<ellipse cx="720" cy="-100" rx="800" ry="400" class="fill-green-50/40" filter="url(#hero-blur)" />
+			<circle cx="400" cy="0" r="300" class="fill-green-200/10" filter="url(#hero-blur)" />
 
-			<ellipse cx="720" cy="1000" rx="900" ry="500" class="fill-lime-200/30" filter="url(#hero-blur)" />
-			<circle cx="1100" cy="900" r="400" class="fill-lime-400/20" filter="url(#hero-blur)" />
+			<ellipse cx="720" cy="1000" rx="900" ry="500" class="fill-green-200/30" filter="url(#hero-blur)" />
+			<circle cx="1100" cy="900" r="400" class="fill-green-100/20" filter="url(#hero-blur)" />
 
 			<circle cx="720" cy="450" r="400" fill="#ffffff" fill-opacity="0.4" filter="url(#hero-blur)" />
 		</svg>
@@ -26,17 +43,17 @@
 			class="absolute inset-0"
 			style="background: linear-gradient(to bottom, transparent, rgba(247, 254, 231, 0.2), transparent);"
 		></div>
-	</div>
+	</div> -->
 	<div class="container mx-auto px-4">
 		<!-- Section Header -->
 		<header class="mb-12 text-center">
 			<span
-				class="mb-4 inline-block rounded-full bg-lime-100 px-4 py-1 text-xs font-bold tracking-widest text-lime-700 uppercase"
+				class="mb-4 inline-block rounded-full bg-emerald-100 px-4 py-1 text-xs font-bold tracking-widest text-emerald-700 uppercase"
 			>
 				Interior Services
 			</span>
 			<h2 class="mb-4 text-4xl leading-tight font-black text-slate-900 md:text-5xl lg:text-6xl">
-				Interior Painting <span class="text-lime-500">Services</span>
+				Interior Painting <span class="text-emerald-500">Services</span>
 			</h2>
 			<p class="mx-auto max-w-2xl text-lg text-slate-600">
 				Interior painting in Edmonton for walls, ceilings, trim, and doors—with careful prep and a clean finish.
@@ -64,89 +81,95 @@
 
 			<!-- What's Included Card -->
 
-			<div class="col-span-1 row-span-2 rounded-3xl bg-slate-900 p-6 md:col-span-2 lg:col-span-1">
-				<h4 class="mb-4 text-lg font-bold text-white">We Specialize In Interiors</h4>
-				<div class="grid grid-cols-2 gap-2">
-					<span class="rounded-lg bg-slate-800 px-3 py-2 text-center text-sm font-medium text-slate-200">Walls</span>
-					<span class="rounded-lg bg-slate-800 px-3 py-2 text-center text-sm font-medium text-slate-200">Ceilings</span>
-					<span class="rounded-lg bg-slate-800 px-3 py-2 text-center text-sm font-medium text-slate-200">Trim</span>
-					<span class="rounded-lg bg-slate-800 px-3 py-2 text-center text-sm font-medium text-slate-200">Doors</span>
-					<span class="rounded-lg bg-slate-800 px-3 py-2 text-center text-sm font-medium text-slate-200">
-						Bathrooms
-					</span>
-					<span class="rounded-lg bg-slate-800 px-3 py-2 text-center text-sm font-medium text-slate-200">
-						Bathrooms
-					</span>
-					<span class="col-span-2 rounded-lg bg-white/0 px-3 py-2 text-center text-sm font-bold text-white/0">
-						Find Out More About NCS Interiors
-					</span>
+			<div class="lg:col-span- col-span-1 row-span-2 space-y-8 rounded-3xl bg-slate-900 p-6 md:col-span-2">
+				<div>
+					<h4 class="mb-4 text-lg font-bold text-white">We Specialize In Interiors</h4>
+					<div class="grid grid-cols-2 gap-2">
+						<span class="rounded-lg bg-slate-800 px-3 py-2 text-center text-sm font-medium text-slate-200">Walls</span>
+						<span class="rounded-lg bg-slate-800 px-3 py-2 text-center text-sm font-medium text-slate-200">
+							Ceilings
+						</span>
+						<span class="rounded-lg bg-slate-800 px-3 py-2 text-center text-sm font-medium text-slate-200">Trim</span>
+						<span class="rounded-lg bg-slate-800 px-3 py-2 text-center text-sm font-medium text-slate-200">Doors</span>
+						<span class="rounded-lg bg-slate-800 px-3 py-2 text-center text-sm font-medium text-slate-200">
+							Hallways
+						</span>
+						<span class="rounded-lg bg-slate-800 px-3 py-2 text-center text-sm font-medium text-slate-200">
+							Bathrooms
+						</span>
+						<span class="rounded-lg bg-slate-800 px-3 py-2 text-center text-sm font-medium text-slate-200">
+							Family Rooms
+						</span>
+						<span class="rounded-lg bg-slate-800 px-3 py-2 text-center text-sm font-medium text-slate-200">
+							Kitchens
+						</span>
+					</div>
 				</div>
-				<div class=" rounded-3xl bg-lime-50/15 p-6 shadow-lg">
-					<h4 class="mb-4 text-lg font-bold text-white">What's Included</h4>
-					<ul class="space-y-3">
-						<li class="flex items-start gap-3">
-							<svg
-								class="mt-0.5 h-5 w-5 flex-shrink-0 text-lime-500"
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 24 24"
-							>
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-							</svg>
-							<span class="text-sm text-white/80">Light patching, sanding & surface prep</span>
-						</li>
-						<li class="flex items-start gap-3">
-							<svg
-								class="mt-0.5 h-5 w-5 flex-shrink-0 text-lime-500"
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 24 24"
-							>
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-							</svg>
-							<span class="text-sm text-white/80">Protection for floors & furniture</span>
-						</li>
-						<li class="flex items-start gap-3">
-							<svg
-								class="mt-0.5 h-5 w-5 flex-shrink-0 text-lime-500"
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 24 24"
-							>
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-							</svg>
-							<span class="text-sm text-white">Crisp cut lines on trim & corners</span>
-						</li>
-						<li class="flex items-start gap-3">
-							<svg
-								class="mt-0.5 h-5 w-5 flex-shrink-0 text-lime-500"
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 24 24"
-							>
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-							</svg>
-							<span class="text-sm text-white">Priming for even coverage</span>
-						</li>
-						<li class="flex items-start gap-3">
-							<svg
-								class="mt-0.5 h-5 w-5 flex-shrink-0 text-lime-500"
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 24 24"
-							>
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-							</svg>
-							<span class="text-sm text-white/80">Daily cleanup & final walkthrough</span>
-						</li>
-					</ul>
+				<div class="flex gap-8 rounded-3xl bg-emerald-50/15 p-6 shadow-lg">
+					<div class="md:flex-2">
+						<h4 class="mb-4 text-lg font-bold text-white">What's Included</h4>
+						<ul class="space-y-3">
+							<li class="flex items-start gap-3">
+								<svg
+									class="mt-0.5 h-5 w-5 flex-shrink-0 text-emerald-500"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+								</svg>
+								<span class="text-sm text-white/80">Light patching, sanding & surface prep</span>
+							</li>
+							<li class="flex items-start gap-3">
+								<svg
+									class="mt-0.5 h-5 w-5 flex-shrink-0 text-emerald-500"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+								</svg>
+								<span class="text-sm text-white/80">Protection for floors & furniture</span>
+							</li>
+							<li class="flex items-start gap-3">
+								<svg
+									class="mt-0.5 h-5 w-5 flex-shrink-0 text-emerald-500"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+								</svg>
+								<span class="text-sm text-white">Crisp cut lines on trim & corners</span>
+							</li>
+							<li class="flex items-start gap-3">
+								<svg
+									class="mt-0.5 h-5 w-5 flex-shrink-0 text-emerald-500"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+								</svg>
+								<span class="text-sm text-white">Priming for even coverage</span>
+							</li>
+							<li class="flex items-start gap-3">
+								<svg
+									class="mt-0.5 h-5 w-5 flex-shrink-0 text-emerald-500"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+								</svg>
+								<span class="text-sm text-white/80">Daily cleanup & final walkthrough</span>
+							</li>
+						</ul>
+					</div>
+					<div class="hidden rounded-3xl bg-emerald-400 p-6 shadow-lg md:block md:flex-1">
+						<h4 class="mb-4 text-lg font-bold text-gray-950">Action</h4>
+					</div>
 				</div>
-			</div>
-
-			<!-- Stats Card -->
-			<div class="col-span-1 flex flex-col items-center justify-center rounded-3xl bg-lime-500 p-6 text-center">
-				<span class="text-5xl font-black text-white">98%</span>
-				<span class="mt-1 text-sm font-medium text-lime-100">Customer Satisfaction</span>
 			</div>
 
 			<!-- Small Image Card -->
@@ -159,9 +182,9 @@
 			</div>
 
 			<!-- FAQ Card 1 -->
-			<div class="col-span-1 rounded-3xl bg-white p-6 shadow-lg md:col-span-2 lg:col-span-1">
-				<div class="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-lime-100">
-					<svg class="h-5 w-5 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<div class="col-span-1 rounded-3xl bg-white p-6 shadow-lg">
+				<div class="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100">
+					<svg class="h-5 w-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path
 							stroke-linecap="round"
 							stroke-linejoin="round"
@@ -176,29 +199,6 @@
 				</p>
 			</div>
 
-			<!-- Services List Card -->
-			<div class="col-span-1 rounded-3xl bg-white p-6 shadow-lg md:col-span-2 lg:col-span-1">
-				<h4 class="mb-4 text-lg font-bold text-neutral-950">Action</h4>
-				<div class="grid grid-cols-2 gap-2">
-					<span class="rounded-lg bg-neutral-950/5 px-3 py-2 text-center text-sm font-medium text-slate-950">
-						Walls
-					</span>
-					<span class="rounded-lg bg-neutral-950/5 px-3 py-2 text-center text-sm font-medium text-slate-950">
-						Ceilings
-					</span>
-					<span class="rounded-lg bg-neutral-950/5 px-3 py-2 text-center text-sm font-medium text-slate-950">Trim</span>
-					<span class="rounded-lg bg-neutral-950/5 px-3 py-2 text-center text-sm font-medium text-slate-950">
-						Doors
-					</span>
-					<span class="rounded-lg bg-neutral-950/5 px-3 py-2 text-center text-sm font-bold text-slate-950">
-						Cabinets
-					</span>
-					<span class="rounded-lg bg-neutral-950/5 px-3 py-2 text-center text-sm font-bold text-slate-950">
-						Cabinets
-					</span>
-				</div>
-			</div>
-
 			<!-- Second Small Image -->
 			<div class="group relative col-span-1 overflow-hidden rounded-3xl">
 				<img
@@ -208,49 +208,30 @@
 				/>
 			</div>
 
-			<!-- Projects Stat -->
+			<!-- Interior Gallery -->
 			<div class="col-span-1 flex flex-col items-center justify-center rounded-3xl bg-white p-6 text-center shadow-lg">
-				<p class="text-5xl font-black text-slate-900">Also Serving</p>
-
-				<ul class=" ">
-					<li>
-						<a class="mt-1 text-lg font-medium text-slate-900" href="/locations/fort-saskatchewan-painters">
-							Fort Saskatchewan
-						</a>
-					</li>
-					<li>
-						<a class="mt-1 text-lg font-medium text-slate-900" href="/locations/sherwood-park-painters">
-							Sherwood Park
-						</a>
-					</li>
-					<li>
-						<a class="mt-1 text-lg font-medium text-slate-900" href="/locations/beaumont-painters">Beaumont</a>
-					</li>
-					<li>
-						<a class="mt-1 text-lg font-medium text-slate-900" href="/locations/st-albert-painters">St Albert</a>
-					</li>
-				</ul>
+				<p class="text-5xl font-black text-emerald-400">Interior Painting Gallery Call To Action</p>
 			</div>
 		</div>
 
 		<!-- CTA Footer -->
 		<footer
-			class="mt-12 flex flex-col items-center justify-between gap-6 rounded-3xl bg-slate-900 p-8 md:flex-row md:p-10"
+			class="mt-12 flex flex-col items-center gap-6 rounded-3xl bg-slate-900 p-8 md:p-10 xl:flex-row xl:justify-between xl:gap-12"
 		>
-			<div>
+			<div class=" ">
 				<h3 class="mb-2 text-2xl font-bold text-white md:text-3xl">Ready to refresh your interior?</h3>
-				<p class="text-slate-400">Get a free, no-obligation quote for your Edmonton home.</p>
+				<p class=" text-sm text-slate-400">Get a free, no-obligation quote for your Edmonton home.</p>
 			</div>
-			<div class="flex flex-col gap-3 sm:flex-row">
+			<div class="flex flex-row gap-4">
 				<a
 					href="#quote-form"
-					class="rounded-xl bg-lime-500 px-8 py-4 text-center font-bold text-white shadow-lg transition-all hover:bg-lime-400 hover:shadow-xl"
+					class="rounded-xl bg-emerald-500 px-4 py-4 text-center text-sm font-bold text-white transition-all hover:bg-emerald-600 hover:shadow-xl sm:px-8 sm:text-base"
 				>
 					Request a Free Quote
 				</a>
 				<a
 					href="tel:7807225577"
-					class="flex items-center justify-center gap-2 rounded-xl border-2 border-slate-700 bg-transparent px-8 py-4 font-bold text-white transition-all hover:border-lime-500 hover:bg-lime-500/10"
+					class="flex items-center justify-center gap-2 rounded-xl bg-transparent px-4 py-4 text-center text-sm font-bold text-white transition-all hover:bg-emerald-500/25 sm:text-base"
 				>
 					<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path

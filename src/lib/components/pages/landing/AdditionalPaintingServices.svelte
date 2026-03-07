@@ -4,10 +4,10 @@ Description: A section highlighting specialty and add-on painting services like 
              trim/door painting, deck staining, and drywall patching in the Edmonton area.
 -->
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { fly } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
 	import { ChevronDown } from 'lucide-svelte';
+	import { onMount } from 'svelte';
+	import { quintOut } from 'svelte/easing';
+	import { fly } from 'svelte/transition';
 
 	let servicesWithTags = [
 		{
@@ -164,7 +164,7 @@ Description: A section highlighting specialty and add-on painting services like 
 		<div class="mt-16 rounded-3xl bg-gray-800 p-12">
 			<div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
 				<div>
-					<h3 class="text-3xl font-bold text-white">Frequently Asked Questions</h3>
+					<h3 class="text-3xl font-bold text-white">Addition Services FAQ</h3>
 					<div class="mt-6 space-y-4 border-t border-white/10 pt-6">
 						<details class="group rounded-lg bg-gray-900/50 p-4" name="faq">
 							<summary class="flex cursor-pointer list-none items-center justify-between font-semibold text-white">

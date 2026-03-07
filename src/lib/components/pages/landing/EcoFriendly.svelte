@@ -36,7 +36,7 @@
 			</div>
 
 			<div class="relative h-full w-full overflow-hidden rounded-lg bg-stone-800">
-				<img src="/eco-friendly.png" alt="" class="object-rigt h-full w-full object-bottom-left" />
+				<img src="/eco-1.png" alt="" class="object-rigt h-full w-full object-bottom-left" />
 			</div>
 		</div>
 	</div>

@@ -1,124 +1,210 @@
 <script lang="ts">
-	import { Button } from '$lib/ui/button';
-	import { Plus, Minus } from 'lucide-svelte';
-	import QuestionDetails from '$lib/components/details/QuestionDetails.svelte';
+	// Svelte 5 – FAQ section using native <details>/<summary>
+	// All items closed by default (no open attribute set)
 
-	const faqData = [
+	type FaqItem = {
+		question: string;
+		answer: string;
+	};
+
+	const faqs: FaqItem[] = [
 		{
-			question: 'How much does it cost to paint a room in Edmonton?',
+			question: 'How much does it cost to paint the interior of a house?',
 			answer:
-				'Pricing depends on size, wall condition, paint type, and prep time. Request a free quote for an accurate estimate.'
+				"Interior painting costs in Edmonton typically range from $1.50–$3.50 per square foot, depending on ceiling height, number of rooms, surface condition, and paint quality. A standard 1,000 sq ft main floor generally runs between $1,500–$3,500. We provide a detailed, no-obligation estimate after a quick walkthrough so you know exactly what's included before any work begins."
 		},
 		{
-			question: 'Do you offer free estimates in Edmonton?',
-			answer: 'Yes—send a few details and we’ll schedule a quick estimate.'
+			question: 'What is the best time of year to paint the exterior of my home?',
+			answer:
+				"In Edmonton, the ideal exterior painting window is late May through early September when temperatures consistently stay above 10°C and humidity is lower. Applying paint in freezing or near-freezing conditions causes poor adhesion and premature peeling. We monitor forecasts closely and schedule your project around Edmonton's unpredictable weather to ensure a durable, long-lasting finish."
 		},
 		{
-			question: 'How long does interior painting take?',
-			answer: 'Many rooms take 1–2 days depending on prep and drying time.'
+			question: 'How do you protect my floors and furniture during an interior paint job?',
+			answer:
+				"We use drop cloths, plastic sheeting, and painter's tape to fully protect your floors, furniture, and trim before we touch a brush or roller. Small items are moved out of the work area and larger pieces are covered in place. At the end of each day, we tidy up and leave your home as clean and livable as we found it."
 		},
 		{
-			question: 'What’s included in your prep work?',
-			answer: 'Protection, light patching/sanding as needed, and priming where required.'
+			question: 'How long does it take to paint a typical Edmonton home?',
+			answer:
+				'A standard interior paint job—walls, ceilings, and trim across 3–4 bedrooms—usually takes 3–5 business days. Exterior painting on an average single-family home takes 4–7 days, depending on prep work needed, number of stories, and weather. We give you a clear timeline in your estimate and communicate any changes as the project progresses.'
 		},
 		{
-			question: 'What time of year is best for exterior painting in Edmonton?',
-			answer: 'Late spring through early fall is typical—weather conditions affect curing.'
-		},
-		{
-			question: 'How long does exterior paint last?',
-			answer: 'It varies by surface, sun exposure, and prep—good prep helps paint last longer.'
-		},
-		{
-			question: 'Do I need to move furniture before painters arrive?',
-			answer: 'Moving small items helps; we’ll confirm what to move during scheduling.'
-		},
-		{
-			question: 'Can you paint cabinets / trim / doors?',
-			answer: 'Yes—tell us what you’re updating and we’ll recommend the right approach during the estimate.'
+			question: 'Do I need to do anything to prepare my home before your crew arrives?',
+			answer:
+				'Very little is needed from you. We ask that you remove small personal items (photos, décor, valuables) from walls and clear pathways in rooms being painted. We handle all furniture moving, surface prep, patching, priming, and masking. For exterior jobs, trimming back shrubs or plants that press against the siding helps us work efficiently and safely.'
 		}
 	];
-	const faqs = shuffelFaqs(6);
-	function shuffelFaqs(pickCount = 3) {
-		const numToPick = pickCount;
-		const shuffle = [...faqData];
-		shuffle.sort(() => 0.5 - Math.random());
-		const faqs = shuffle.slice(0, numToPick);
-		return faqs;
-	}
-
-	let openItem: number | null = null;
 </script>
 
-<section class=" bg-[rgb(247_153_7)]">
-	<div class="container mx-auto px-4">
-		<div class="grid lg:grid-cols-2 lg:gap-16">
-			<img src="/faq2.png" alt="" />
-			<div class="flex flex-col justify-center pb-12 lg:pb-0">
-				<h2 class="text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">Frequently Asked Questions</h2>
-				<p class="mt-4 max-w-xl text-lg text-stone-600">Quick answers to common questions from Edmonton homeowners.</p>
-
-				<p class="text-base text-stone-600">
-					Ready for a quote? Tell us your project and we’ll reply by phone or email.
+<!--
+  FAQ Section – NCS Painting Home Page
+  Uses native <details> / <summary> for full semantic correctness.
+  Animation: CSS grid-template-rows trick on the answer panel.
+  All questions closed by default (no `open` attribute on <details>).
+-->
+<section id="faq" aria-labelledby="faq-heading" class="bg-gray-900 py-16 md:py-20 lg:py-24">
+	<div class="container mx-auto px-6 lg:px-0">
+		<!-- Section Contents -->
+		<div class="  lg:grid lg:grid-cols-2 lg:gap-12">
+			<!-- Section label + heading -->
+			<header class=" mb-12 self-center">
+				<p class="mb-3 flex items-center gap-2 text-sm font-semibold tracking-widest text-sky-300 uppercase">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="14"
+						height="14"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						aria-hidden="true"
+					>
+						<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+						<circle cx="12" cy="12" r="3" />
+					</svg>
+					Ask The Painter
 				</p>
+				<h2 id="faq-heading" class="text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
+					Frequently Asked Questions
+				</h2>
+				<p class="my-5 max-w-md text-base leading-relaxed text-[#6B7280]">
+					Edmonton homeowners ask us these questions all the time. Here are straightforward answers from our team.
+				</p>
+				<div class=" hidden lg:flex lg:items-center lg:gap-4">
+					<a
+						href="/services/interior-painting"
+						class="rounded-xl bg-cyan-500 px-8 py-4 font-semibold text-white transition hover:bg-cyan-600"
+					>
+						Question For The Painter?
+					</a>
+					<a
+						href="#quote-form"
+						class="rounded-xl bg-cyan-500/10 px-8 py-4 font-semibold text-white transition hover:bg-cyan-500/20"
+					>
+						More FAQ
+					</a>
+				</div>
+			</header>
 
-				<div class="w-xl">
-					{#each faqs as faq, i}
-						<QuestionDetails class="bg-orange-100" question={faq.question} answer={faq.answer} />
-					{/each}
+			<!-- ── FAQ ── -->
+			<div class="     space-y-6">
+				{#each faqs as faq, i}
+					<!--
+            <details> manages open/closed state natively in the browser.
+            No `open` attribute = closed by default.
+            `group` lets child elements react to open state via group-open:
+          -->
+					<details class="animated-details group overflow-hidden rounded-[20px] bg-gray-800 shadow-sm">
+						<!--
+              <summary> is the native clickable trigger.
+              list-none + [&::-webkit-details-marker]:hidden removes
+              the default browser triangle/arrow marker.
+            -->
+						<summary
+							class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 [&::-webkit-details-marker]:hidden"
+						>
+							<div class="flex items-center gap-2 text-sm leading-snug font-bold text-white sm:text-base">
+								<span class="mr-2 text-2xl text-cyan-600">{i + 1}.</span>
+								<p class="text-base">{faq.question}</p>
+							</div>
+
+							<!-- + icon rotates 45deg to form × when details is open -->
+							<span
+								aria-hidden="true"
+								class="flex-shrink-0 text-[#374151] transition-transform duration-300 group-open:rotate-45"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path d="M12 5v14M5 12h14" />
+								</svg>
+							</span>
+						</summary>
+
+						<!--
+              Answer panel – same grid-rows animation as before.
+              grid-rows-[0fr] = collapsed, grid-rows-[1fr] = expanded.
+              group-open: variant applies when the parent <details> has the open attribute.
+            -->
+						<div class="content">
+							<div class="overflow-hidden">
+								<p class="px-6 pt-1 pb-5 text-sm leading-relaxed text-[#6B7280] sm:text-base">
+									{faq.answer}
+								</p>
+							</div>
+						</div>
+					</details>
+				{/each}
+			</div>
+
+			<!-- Call To Action -->
+			<div class="mt-12 rounded-3xl lg:hidden">
+				<div class="flex flex-col items-start justify-center rounded-2xl p-8">
+					<h3 class="text-3xl font-bold text-white">Ask the Painter?</h3>
+					<p class="mt-2 mb-4 text-gray-400">
+						We're here to help. If you have a question you can email or call and Niall will get back to you as soon as
+						possible.
+					</p>
+					<div class="flex items-center gap-4">
+						<a
+							href="/services/interior-painting"
+							class="rounded-xl bg-cyan-500 px-4 py-4 text-sm font-semibold text-white transition hover:bg-cyan-600 sm:px-8 sm:text-base"
+						>
+							Questions? Ask The Painter
+						</a>
+						<a
+							href="#quote-form"
+							class="rounded-xl bg-cyan-500/10 px-8 py-4 text-sm font-semibold text-white transition hover:bg-cyan-500/20 sm:px-8 sm:text-base"
+						>
+							More FAQ
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="border-b-8 border-white"></div>
-
-	<footer>
-		<div class="mt-6 flex flex-col items-start gap-4 sm:flex-row">
-			<Button href="#quote-form" size="lg">Request a Free Quote</Button>
-			<Button href="tel:7807225577" size="lg" variant="outline">Call the Painter</Button>
-			<Button href="mailto:info@ncspainting.com" size="lg" variant="ghost">Email</Button>
-		</div>
-	</footer>
 </section>
 
-<!-- Remove This Code -->
-<!-- <div class="container mx-auto grid grid-cols-3 py-10">
-		{#each faqs as faq, index}
-			<div class="rounded-lg border border-stone-200 bg-white shadow-sm">
-				<button
-					on:click={() => toggleItem(index)}
-					class="flex w-full items-center justify-between p-6 text-left"
-					aria-expanded={openItem === index}
-				>
-					<span class="text-base font-medium text-stone-900">{faq.question}</span>
-					{#if openItem === index}
-						<Minus class="h-6 w-6 flex-shrink-0 text-stone-500" />
-					{:else}
-						<Plus class="h-6 w-6 flex-shrink-0 text-stone-400" />
-					{/if}
-				</button>
-				{#if openItem === index}
-					<div transition:slide={{ duration: 200 }} class="px-6 pb-6">
-						<p class="text-base text-stone-600">
-							{faq.answer}
-						</p>
-					</div>
-				{/if}
-			</div>
-		{/each}
-	</div>
+<style>
+	/* Enable smooth transitions for intrinsic sizes (like height: auto) */
+	:root {
+		interpolate-size: allow-keywords;
+	}
 
-	<div class="container mx-auto grid grid-cols-3 py-10">
-		{#each faqs as faq, index}
-			<div class="rounded-lg border border-stone-200 bg-white shadow-sm">
-				<span class="text-base font-medium text-stone-900">{faq.question}</span>
-				{#if openItem === index}
-					<div transition:slide={{ duration: 200 }} class="px-6 pb-6">
-						<p class="text-base text-stone-600">
-							{faq.answer}
-						</p>
-					</div>
-				{/if}
-			</div>
-		{/each}
-	</div> -->
+	.animated-details {
+		overflow: hidden;
+	}
+
+	/* Target the expandable content container */
+	.animated-details::details-content {
+		/* 1. Define the transition for height/opacity */
+		transition:
+			height 0.5s ease,
+			opacity 0.5s ease,
+			content-visibility 0.5s ease;
+
+		/* 2. THE SECRET: Allow discrete property transitions to wait for the animation */
+		transition-behavior: allow-discrete;
+
+		/* Initial closed state */
+		height: 0;
+		opacity: 0;
+		overflow: hidden;
+	}
+
+	/* Define the state when the details element is [open] */
+	.animated-details[open]::details-content {
+		height: auto;
+		opacity: 1;
+	}
+</style>

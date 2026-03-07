@@ -9,12 +9,12 @@
 	import LetUsHelp from '$lib/components/pages/landing/LetUsHelp.svelte';
 
 	import ExteriorPaintingServices from '$lib/components/pages/landing/ExteriorPaintingServices.svelte';
+
+	import AdditionalPaintingServices from '$lib/components/pages/landing/AdditionalPaintingServices.svelte';
+	import Faq from '$lib/components/pages/landing/Faq.svelte';
 	import ServiceAreas from '$lib/components/pages/landing/ServiceAreas.svelte';
-	import Temp from '$lib/components/pages/landing/Temp.svelte';
-	import AdditionalPaintingServices from '$lib/examples/AdditionalPaintingServices.svelte';
 </script>
 
-<Temp />
 <Hero />
 <WhyChooseUs />
 <InteriorPaintingServices />
@@ -23,5 +23,5 @@
 <ServiceAreas />
 <Process />
 <EcoFriendly />
-
+<Faq />
 <LetUsHelp />

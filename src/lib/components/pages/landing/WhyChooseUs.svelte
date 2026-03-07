@@ -1,7 +1,7 @@
 <section id="why-choose-us" class="relative isolate overflow-hidden py-16 md:py-24">
 	<div class="container mx-auto px-4">
 		<div class="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
-			<div class="order-2 w-full lg:order-1 lg:w-1/2">
+			<div class="  w-full lg:order-1 lg:w-1/2">
 				<header class="mb-12">
 					<span
 						class="mb-4 inline-block rounded-full bg-lime-100 px-4 py-1 text-xs font-bold tracking-widest text-lime-600 uppercase"
@@ -105,12 +105,12 @@
 						href="/quote"
 						class="rounded-xl bg-slate-900 px-8 py-4 font-bold text-white shadow-lg transition-all hover:bg-lime-500"
 					>
-						Claim Your Free Estimate
+						Call To Action Will Go Here
 					</a>
 				</div>
 			</div>
 
-			<div class="order-1 flex w-full flex-col gap-4 lg:order-2 lg:w-1/2">
+			<div class="  flex w-full flex-col gap-4 lg:order-2 lg:w-1/2">
 				<div class="flex items-end gap-4">
 					<img
 						src="/image-26.png"

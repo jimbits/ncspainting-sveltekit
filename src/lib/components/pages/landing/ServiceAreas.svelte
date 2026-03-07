@@ -1,129 +1,153 @@
 <script lang="ts">
-	import { ArrowRight, MapPin } from 'lucide-svelte';
-
-	type ServiceArea = {
-		name: string;
-		href: string;
-		image: string;
-		blurb: string;
-		badge?: string;
+	const header = {
+		eyebrow: 'NCS Painting Service Areas',
+		title: 'Serving Edmonton And Nearby Communities',
+		tagline:
+			'Need reliable house painters Edmonton homeowners trust? We provide interior painting and exterior painting services across key nearby communities with clean prep, clear pricing, and free quote options.'
 	};
 
-	const defaultItems: ServiceArea[] = [
-		{
-			name: 'St. Albert',
-			href: '/locations/st-albert-painters',
-			image: '/image-34.png',
-			blurb: 'Interior & exterior painting with clean prep and crisp lines.',
-			badge: 'Most requested'
-		},
-		{
-			name: 'Sherwood Park',
-			href: '/locations/sherwood-park-painters',
-			image: '/image-40.png',
-			blurb: 'Reliable scheduling, tidy work habits, durable finishes.'
-		},
-		{
-			name: 'Fort Saskatchewan',
-			href: '/locations/fort-saskatchewan-painters',
-			image: '/image-41.png',
-			blurb: 'Great for repaints, trim refreshes, and curb-appeal upgrades.'
-		},
-		{
-			name: 'Beaumont',
-			href: '/locations/beaumont-painters',
-			image: '/image-42.png',
-			blurb: 'Modern finishes, smooth walls, and sharp cut lines.'
-		}
-	];
+	const topLeft = {
+		title: 'Sherwood Park',
+		description:
+			'Residential painters for Sherwood Park homes, including full interior repaint projects, exterior prep, and durable finishes built for Alberta weather.',
+		image: '/image-40.png',
+		imageAlt: 'Residential painting project in Sherwood Park Alberta',
+		href: '/locations/sherwood-park-painters',
+		cta: 'See Sherwood Park details'
+	};
 
-	let {
-		title = 'Service Areas',
-		subtitle = 'Local painters serving Edmonton-area communities',
-		items = defaultItems
-	}: {
-		title?: string;
-		subtitle?: string;
-		items?: ServiceArea[];
-	} = $props();
+	const topRight = {
+		title: 'Saint Albert',
+		description:
+			'Local painting company support for Saint Albert homeowners looking for clean interior painting, crisp trim lines, and exterior curb appeal updates.',
+		href: '/locations/st-albert-painters',
+		cta: 'Plan my St. Albert project'
+	};
+
+	const bottomLeft = {
+		title: 'Beaumont',
+		description:
+			'Home painting services in Beaumont with careful prep, premium coatings, and dependable timelines for both occupied homes and move-in ready projects.',
+		href: '/locations/beaumont-painters',
+		cta: 'Explore Beaumont painting'
+	};
+
+	const bottomRight = {
+		title: 'Fort Saskatchewan',
+		description:
+			'Trusted Fort Saskatchewan painters for interior walls, ceilings, trim, and weather-resistant exterior painting designed for long-term performance.',
+		image: '/image-41.png',
+		imageAlt: 'House painters completing a project in Fort Saskatchewan Alberta',
+		href: '/locations/fort-saskatchewan-painters',
+		cta: 'Book Fort Saskatchewan consult'
+	};
 </script>
 
-<section class="bg-white">
-	<div class="mx-auto max-w-6xl px-4 py-12 sm:py-14 lg:py-16">
-		<header class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-			<div>
-				<p
-					class="inline-flex items-center gap-2 rounded-full bg-stone-100 px-3 py-1 text-xs font-medium text-stone-700"
-				>
-					<MapPin class="h-4 w-4 text-stone-600" />
-					{subtitle}
-				</p>
-				<h2 class="mt-3 text-2xl font-semibold tracking-tight text-stone-950 sm:text-3xl">{title}</h2>
-				<p class="mt-2 max-w-2xl text-sm text-stone-600 sm:text-base">
-					Explore your area for service details, FAQs, and project-ready booking options.
-				</p>
-			</div>
-
-			<a
-				href="/locations"
-				class="group inline-flex w-fit items-center gap-2 rounded-xl bg-stone-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-stone-900 focus:ring-2 focus:ring-indigo-300 focus:outline-none"
+<section id="service-areas" class="bg-white py-16 sm:py-20 lg:py-24">
+	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+		<header class="mx-auto max-w-3xl text-center">
+			<p
+				class="inline-flex items-center rounded-full border border-lime-200 bg-lime-50 px-3 py-1 text-xs font-semibold tracking-[0.14em] text-lime-700 uppercase"
 			>
-				View all locations
-				<ArrowRight class="h-4 w-4 transition group-hover:translate-x-0.5" />
-			</a>
+				{header.eyebrow}
+			</p>
+			<h2 class="mt-6 text-5xl leading-tight font-semibold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
+				{header.title}
+			</h2>
+			<p class="mt-5 text-lg leading-relaxed text-slate-600 sm:text-xl">{header.tagline}</p>
 		</header>
 
-		<!-- Bento grid -->
-		<div class="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-12">
-			{#each items as area, i (area.href)}
+		<div class="mt-12 grid gap-6 lg:grid-cols-12">
+			<article class="rounded-3xl border border-lime-100 bg-slate-50 p-4 shadow-sm sm:p-5 lg:col-span-7">
+				<div class="grid items-center gap-5 lg:grid-cols-[1fr_1fr]">
+					<div class="overflow-hidden rounded-2xl">
+						<picture>
+							<img
+								src={topLeft.image}
+								alt={topLeft.imageAlt}
+								class="h-56 w-full object-cover sm:h-64"
+								loading="lazy"
+								width="900"
+								height="640"
+							/>
+						</picture>
+					</div>
+					<div>
+						<h3 class="text-4xl leading-tight font-semibold tracking-tight text-slate-900 sm:text-5xl">{topLeft.title}</h3>
+						<p class="mt-4 text-base leading-relaxed text-slate-600">{topLeft.description}</p>
+						<a
+							href={topLeft.href}
+							class="mt-5 inline-flex min-h-11 items-center rounded-xl bg-lime-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-lime-400 focus-visible:ring-2 focus-visible:ring-lime-500/50 focus-visible:ring-offset-2 focus-visible:outline-none"
+						>
+							{topLeft.cta}
+						</a>
+					</div>
+				</div>
+			</article>
+
+			<article class="rounded-3xl border border-lime-100 bg-slate-50 p-6 shadow-sm sm:p-7 lg:col-span-5">
+				<h3 class="text-4xl leading-tight font-semibold tracking-tight text-slate-900 sm:text-5xl">{topRight.title}</h3>
+				<p class="mt-4 text-base leading-relaxed text-slate-600">{topRight.description}</p>
 				<a
-					href={area.href}
-					data-event="location_click"
-					class={[
-						'group relative overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition',
-						'hover:-translate-y-1 hover:border-stone-300 hover:shadow-md focus:ring-2 focus:ring-indigo-300 focus:outline-none',
-						// bento sizing
-						i === 0 ? 'lg:col-span-7 lg:row-span-2' : i === 1 ? 'lg:col-span-5' : 'lg:col-span-6'
-					].join(' ')}
+					href={topRight.href}
+					class="mt-5 inline-flex min-h-11 items-center rounded-xl bg-lime-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-lime-400 focus-visible:ring-2 focus-visible:ring-lime-500/50 focus-visible:ring-offset-2 focus-visible:outline-none"
 				>
-					<!-- Image -->
-					<div class="relative h-52 sm:h-56 lg:h-full">
-						<img
-							src={area.image}
-							alt={'Painting services in ' + area.name}
-							class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-							loading="lazy"
-						/>
-						<div class="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-stone-950/20 to-transparent"></div>
-
-						{#if area.badge}
-							<div
-								class="absolute top-4 left-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-stone-900 backdrop-blur"
-							>
-								{area.badge}
-							</div>
-						{/if}
-					</div>
-
-					<!-- Content -->
-					<div class="absolute inset-x-0 bottom-0 p-5 sm:p-6">
-						<h3 class="text-lg font-semibold text-white sm:text-xl">{area.name}</h3>
-						<p class="mt-1 max-w-[42ch] text-sm text-stone-100/90">
-							{area.blurb}
-						</p>
-
-						<div class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-indigo-200">
-							View details
-							<ArrowRight class="h-4 w-4 transition group-hover:translate-x-0.5" />
-						</div>
-					</div>
-
-					<!-- subtle corner accent -->
-					<div
-						class="pointer-events-none absolute -top-10 -right-10 h-24 w-24 rounded-full bg-indigo-200/30 blur-2xl transition group-hover:bg-indigo-200/40"
-					></div>
+					{topRight.cta}
 				</a>
-			{/each}
+			</article>
+
+			<article class="rounded-3xl border border-lime-100 bg-slate-50 p-6 shadow-sm sm:p-7 lg:col-span-5">
+				<h3 class="text-4xl leading-tight font-semibold tracking-tight text-slate-900 sm:text-5xl">{bottomLeft.title}</h3>
+				<p class="mt-4 text-base leading-relaxed text-slate-600">{bottomLeft.description}</p>
+				<a
+					href={bottomLeft.href}
+					class="mt-5 inline-flex min-h-11 items-center rounded-xl bg-lime-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-lime-400 focus-visible:ring-2 focus-visible:ring-lime-500/50 focus-visible:ring-offset-2 focus-visible:outline-none"
+				>
+					{bottomLeft.cta}
+				</a>
+			</article>
+
+			<article class="rounded-3xl border border-lime-100 bg-slate-50 p-4 shadow-sm sm:p-5 lg:col-span-7">
+				<div class="grid items-center gap-5 lg:grid-cols-[1fr_1fr]">
+					<div class="overflow-hidden rounded-2xl lg:order-1">
+						<picture>
+							<img
+								src={bottomRight.image}
+								alt={bottomRight.imageAlt}
+								class="h-56 w-full object-cover sm:h-64"
+								loading="lazy"
+								width="900"
+								height="640"
+							/>
+						</picture>
+					</div>
+					<div class="lg:order-2">
+						<h3 class="text-4xl leading-tight font-semibold tracking-tight text-slate-900 sm:text-5xl">{bottomRight.title}</h3>
+						<p class="mt-4 text-base leading-relaxed text-slate-600">{bottomRight.description}</p>
+						<a
+							href={bottomRight.href}
+							class="mt-5 inline-flex min-h-11 items-center rounded-xl bg-lime-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-lime-400 focus-visible:ring-2 focus-visible:ring-lime-500/50 focus-visible:ring-offset-2 focus-visible:outline-none"
+						>
+							{bottomRight.cta}
+						</a>
+					</div>
+				</div>
+			</article>
+		</div>
+
+		<div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+			<a
+				href="/contact"
+				class="inline-flex min-h-11 items-center rounded-xl bg-lime-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-lime-400 focus-visible:ring-2 focus-visible:ring-lime-500/50 focus-visible:ring-offset-2 focus-visible:outline-none"
+			>
+				Get a free quote
+			</a>
+			<a
+				href="/projects"
+				class="inline-flex min-h-11 items-center rounded-xl border border-lime-200 bg-white px-6 py-3 text-sm font-semibold text-slate-800 transition hover:border-lime-300 hover:bg-lime-50 focus-visible:ring-2 focus-visible:ring-lime-500/40 focus-visible:ring-offset-2 focus-visible:outline-none"
+			>
+				View recent projects
+			</a>
 		</div>
 	</div>
 </section>
