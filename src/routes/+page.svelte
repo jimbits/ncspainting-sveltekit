@@ -3,7 +3,7 @@
 	import WhyChooseUs from '$lib/components/pages/landing/WhyChooseUs.svelte';
 
 	import Process from '$lib/components/pages/landing/Process.svelte';
-	import Hero from './seo/Hero.svelte';
+	import Hero from '../lib/components/pages/landing/Hero.svelte';
 
 	import EcoFriendly from '$lib/components/pages/landing/EcoFriendly.svelte';
 	import LetUsHelp from '$lib/components/pages/landing/LetUsHelp.svelte';
@@ -12,6 +12,7 @@
 
 	import AdditionalPaintingServices from '$lib/components/pages/landing/AdditionalPaintingServices.svelte';
 	import Faq from '$lib/components/pages/landing/Faq.svelte';
+
 	import ServiceAreas from '$lib/components/pages/landing/ServiceAreas.svelte';
 </script>
 
@@ -23,5 +24,5 @@
 <ServiceAreas />
 <Process />
 <EcoFriendly />
-<Faq />
+<Faq />7
 <LetUsHelp />

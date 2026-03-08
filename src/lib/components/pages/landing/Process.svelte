@@ -1,14 +1,5 @@
 <script>
-	import {
-		Footprints,
-		GitPullRequest,
-		Notebook,
-		NotebookText,
-		Paintbrush,
-		PaintBucket,
-		TrafficCone
-	} from '@lucide/svelte';
-	import { Paintbrush2Icon, TextQuote } from 'lucide-svelte';
+	import { Footprints, GitPullRequest, NotebookText, Paintbrush, TrafficCone } from '@lucide/svelte';
 </script>
 
 <!-- Our Process Section -->
@@ -149,7 +140,7 @@
 				</svg>
 			</a>
 			<a
-				href="tel:17807225577"
+				href="tel:15872084445"
 				class="flex items-center gap-2 font-bold text-slate-900 transition-colors hover:text-amber-600"
 			>
 				<div class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100">
@@ -159,7 +150,7 @@
 						/>
 					</svg>
 				</div>
-				780-722-5577
+				Call 587-208-4445
 			</a>
 		</div>
 	</div>

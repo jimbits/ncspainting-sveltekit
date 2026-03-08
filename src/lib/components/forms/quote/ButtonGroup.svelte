@@ -7,10 +7,10 @@
 
 <script lang="ts">
 	import { cn } from '$lib/utils/cn';
-	import { Check, Mail, Phone, Blend } from '@lucide/svelte';
+	import { Check } from '@lucide/svelte';
 	import { tick } from 'svelte';
 
-	const selections = ['Email', 'Phone', 'Either'] as const;
+	const selections = ['Either', 'Email', 'Phone'] as const;
 	type Item = (typeof selections)[number];
 
 	// ✅ default selected on first render
@@ -84,11 +84,9 @@
 			onclick={() => select(method)}
 			onkeydown={onKeydown}
 			class={cn(
-				'inline-flex w-fit items-center justify-center gap-0.5 rounded py-0.5    text-sm font-semibold transition-all',
-				'focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:outline-none',
-				isSelected
-					? 'bg-blue-50 px-3   text-blue-600 ring-2 ring-blue-400 ring-offset-1'
-					: ' text-gray-500 hover:bg-blue-100 hover:text-blue-700'
+				'inline-flex w-fit items-center justify-center gap-0.5 rounded px-2 py-1 text-sm font-semibold transition-all',
+
+				isSelected ? 'bg-blue-50   text-blue-600    ' : ' text-gray-500 hover:bg-blue-100  hover:text-blue-700'
 			)}
 		>
 			<span>{method}</span>

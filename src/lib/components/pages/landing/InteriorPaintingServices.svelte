@@ -230,7 +230,7 @@
 					Request a Free Quote
 				</a>
 				<a
-					href="tel:7807225577"
+					href="tel:5872084445"
 					class="flex items-center justify-center gap-2 rounded-xl bg-transparent px-4 py-4 text-center text-sm font-bold text-white transition-all hover:bg-emerald-500/25 sm:text-base"
 				>
 					<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -241,7 +241,7 @@
 							d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
 						/>
 					</svg>
-					Call 780-722-5577
+					Call 587-208-4445
 				</a>
 			</div>
 		</footer>

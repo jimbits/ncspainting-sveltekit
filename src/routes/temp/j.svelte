@@ -42,61 +42,85 @@
   Animation: CSS grid-template-rows trick on the answer panel.
   All questions closed by default (no `open` attribute on <details>).
 -->
-<section id="faq" aria-labelledby="faq-heading" class="bg-gray-900 py-16 md:py-20 lg:py-24">
-	<div class="container mx-auto px-6 lg:px-0">
-		<!-- Section Contents -->
-		<div class="  lg:grid lg:grid-cols-2 lg:gap-12">
-			<!-- Section label + heading -->
-			<header class=" mb-12 self-center">
-				<p class="mb-3 flex items-center gap-2 text-sm font-semibold tracking-widest text-sky-300 uppercase">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="14"
-						height="14"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2.5"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						aria-hidden="true"
+<section id="faq" aria-labelledby="faq-heading" class="bg-gray-950 py-16 md:py-20 lg:py-24">
+	<div class="mx-auto max-w-[1280px] px-5 sm:px-8 lg:px-10">
+		<!-- Two-column grid -->
+		<div class="grid gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
+			<!-- ── LEFT COLUMN ── -->
+			<div class="  flex flex-col gap-8">
+				<!-- Section label + heading -->
+				<header class="mb-12">
+					<p class="mb-3 flex items-center gap-2 text-sm font-semibold tracking-widest text-lime-500 uppercase">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="14"
+							height="14"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+							<circle cx="12" cy="12" r="3" />
+						</svg>
+						Clear Your Doubts
+					</p>
+					<h2
+						id="faq-heading"
+						class="text-[clamp(2rem,4vw,2.75rem)] leading-tight tracking-tight text-[#0B0B0B] text-white"
 					>
-						<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
-						<circle cx="12" cy="12" r="3" />
-					</svg>
-					Ask The Painter
-				</p>
-				<h2 id="faq-heading" class="text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
-					Frequently Asked Questions
-				</h2>
-				<p class="my-5 max-w-md text-base leading-relaxed text-[#6B7280]">
-					Edmonton homeowners ask us these questions all the time. Here are straightforward answers from our team.
-				</p>
-				<div class=" hidden lg:flex lg:items-center lg:gap-4">
+						Commonly Asked Questions
+					</h2>
+					<p class="mt-4 max-w-md text-base leading-relaxed text-[#6B7280]">
+						Edmonton homeowners ask us these questions all the time. Here are straightforward answers from our team.
+					</p>
+				</header>
+				<!-- Image card with contact CTA -->
+
+				<!-- Overlay card -->
+				<div class="  m-4 rounded-[18px] bg-white/95 p-5 shadow-lg backdrop-blur-sm">
+					<p class="text-3xl font-bold text-slate-800">Do You Have Questions?</p>
+					<p class="mt-1 text-base text-slate-700">
+						We're here to help. If you have a question you can email or call and Niall will get back to you as soon as
+						possible.
+					</p>
 					<a
-						href="tel:+15872084445"
-						class="rounded-xl bg-cyan-500 px-8 py-4 font-semibold text-white transition hover:bg-cyan-600"
+						href="/contact"
+						class="mt-4 inline-flex items-center gap-2 rounded-xl bg-lime-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-lime-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-500"
 					>
-						Question For The Painter?
-					</a>
-					<a
-						href="#quote-form"
-						class="rounded-xl bg-cyan-500/10 px-8 py-4 font-semibold text-white transition hover:bg-cyan-500/20"
-					>
-						More FAQ
+						Ask The Painter
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<path d="M5 12h14M12 5l7 7-7 7" />
+						</svg>
 					</a>
 				</div>
-			</header>
+			</div>
 
-			<!-- ── FAQ ── -->
-			<div class="     space-y-6">
+			<!-- ── RIGHT COLUMN – details/summary accordion ── -->
+			<div class="  flex flex-col gap-3">
 				{#each faqs as faq, i}
 					<!--
             <details> manages open/closed state natively in the browser.
             No `open` attribute = closed by default.
             `group` lets child elements react to open state via group-open:
           -->
-					<details class="animated-details group overflow-hidden rounded-[20px] bg-gray-800 shadow-sm">
+					<details
+						class="animated-details group overflow-hidden rounded-[20px] bg-white shadow-sm transition-shadow duration-200 open:shadow-md"
+					>
 						<!--
               <summary> is the native clickable trigger.
               list-none + [&::-webkit-details-marker]:hidden removes
@@ -105,9 +129,9 @@
 						<summary
 							class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 [&::-webkit-details-marker]:hidden"
 						>
-							<div class="flex items-center gap-2 text-sm leading-snug font-bold text-white sm:text-base">
-								<span class="mr-2 text-2xl text-cyan-600">{i + 1}.</span>
-								<p class="text-base">{faq.question}</p>
+							<div class="flex items-center gap-2 text-sm leading-snug font-bold text-[#111827] sm:text-base">
+								<span class="mr-2 text-2xl text-lime-500">{i + 1}.</span>
+								<p class="text-lg">{faq.question}</p>
 							</div>
 
 							<!-- + icon rotates 45deg to form × when details is open -->
@@ -146,31 +170,7 @@
 					</details>
 				{/each}
 			</div>
-
-			<!-- Call To Action -->
-			<div class="mt-12 rounded-3xl lg:hidden">
-				<div class="flex flex-col items-start justify-center rounded-2xl p-8">
-					<h3 class="text-3xl font-bold text-white">Ask the Painter?</h3>
-					<p class="mt-2 mb-4 text-gray-400">
-						We're here to help. If you have a question you can email or call and Niall will get back to you as soon as
-						possible.
-					</p>
-					<div class="flex items-center gap-4">
-						<a
-							href="/services/interior-painting"
-							class="rounded-xl bg-cyan-500 px-4 py-4 text-sm font-semibold text-white transition hover:bg-cyan-600 sm:px-8 sm:text-base"
-						>
-							Questions? Ask The Painter
-						</a>
-						<a
-							href="#quote-form"
-							class="rounded-xl bg-cyan-500/10 px-8 py-4 text-sm font-semibold text-white transition hover:bg-cyan-500/20 sm:px-8 sm:text-base"
-						>
-							More FAQ
-						</a>
-					</div>
-				</div>
-			</div>
+			<!-- end right column -->
 		</div>
 	</div>
 </section>
@@ -182,6 +182,8 @@
 	}
 
 	.animated-details {
+		border: 1px solid #ddd;
+		border-radius: 8px;
 		overflow: hidden;
 	}
 

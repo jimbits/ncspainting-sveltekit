@@ -219,7 +219,7 @@ Description: A section highlighting specialty and add-on painting services like 
 					</p>
 					<div class="flex items-center gap-4">
 						<a
-							href="/services/interior-painting"
+							href="tel:+15872084445"
 							class="rounded-xl bg-cyan-500 px-8 py-4 font-semibold text-white transition hover:bg-cyan-600"
 						>
 							Talk to a Painter
