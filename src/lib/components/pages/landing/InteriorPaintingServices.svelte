@@ -1,49 +1,11 @@
 <script lang="ts">
-	// Interior Painting Services - Bento Box Layout
+	import Dialog from '$lib/components/modals/Dialog.svelte';
+	import QuoteForm from '$lib/components/modals/content/QuoteForm.svelte';
+
+	let isOpen = $state(false);
 </script>
 
-<!-- Service Locations -->
-<!--
-
-<ul class="mx-auto grid w-4/5 grid-cols-3 place-content-center bg-blue-400 text-center">
-					<li>
-						<a class=" font-medium text-white/60" href="/locations/st-albert-painters">St Albert</a>
-					</li>
-					<li>
-						<a class=" font-medium text-white/60" href="/locations/sherwood-park-painters">Sherwood Park</a>
-					</li>
-					<li>
-						<a class=" font-medium text-white/60" href="/locations/beaumont-painters">Beaumont</a>
-					</li>
-					<li class="col-span-3">
-						<a class=" font-medium text-white/60" href="/locations/fort-saskatchewan-painters">Fort Saskatchewan</a>
-					</li>
-				</ul> -->
 <section id="interior-painting" class="relative isolate overflow-hidden py-16 md:py-24">
-	<!-- Background -->
-	<!-- <div class="absolute inset-0 -z-10 bg-slate-50"></div>
-	<div class="absolute inset-0 -z-10 overflow-hidden bg-white">
-		<svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" class="h-full w-full object-cover">
-			<defs>
-				<filter id="hero-blur" x="-50%" y="-50%" width="200%" height="200%">
-					<feGaussianBlur stdDeviation="80" />
-				</filter>
-			</defs>
-
-			<ellipse cx="720" cy="-100" rx="800" ry="400" class="fill-green-50/40" filter="url(#hero-blur)" />
-			<circle cx="400" cy="0" r="300" class="fill-green-200/10" filter="url(#hero-blur)" />
-
-			<ellipse cx="720" cy="1000" rx="900" ry="500" class="fill-green-200/30" filter="url(#hero-blur)" />
-			<circle cx="1100" cy="900" r="400" class="fill-green-100/20" filter="url(#hero-blur)" />
-
-			<circle cx="720" cy="450" r="400" fill="#ffffff" fill-opacity="0.4" filter="url(#hero-blur)" />
-		</svg>
-
-		<div
-			class="absolute inset-0"
-			style="background: linear-gradient(to bottom, transparent, rgba(247, 254, 231, 0.2), transparent);"
-		></div>
-	</div> -->
 	<div class="container mx-auto px-4">
 		<!-- Section Header -->
 		<header class="mb-12 text-center">
@@ -223,12 +185,16 @@
 				<p class=" text-sm text-slate-400">Get a free, no-obligation quote for your Edmonton home.</p>
 			</div>
 			<div class="flex flex-row gap-4">
-				<a
-					href="#quote-form"
+				<button
+					onclick={() => (isOpen = true)}
 					class="rounded-xl bg-emerald-500 px-4 py-4 text-center text-sm font-bold text-white transition-all hover:bg-emerald-600 hover:shadow-xl sm:px-8 sm:text-base"
 				>
-					Request a Free Quote
-				</a>
+					Get a Free Quote →
+				</button>
+
+				<Dialog bind:open={isOpen}>
+					<QuoteForm />
+				</Dialog>
 				<a
 					href="tel:5872084445"
 					class="flex items-center justify-center gap-2 rounded-xl bg-transparent px-4 py-4 text-center text-sm font-bold text-white transition-all hover:bg-emerald-500/25 sm:text-base"

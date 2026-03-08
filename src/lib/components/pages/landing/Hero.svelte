@@ -1,4 +1,9 @@
 <script lang="ts">
+	import Dialog from '$lib/components/modals/Dialog.svelte';
+	import QuoteForm from '$lib/components/modals/content/QuoteForm.svelte';
+
+	let isOpen = $state(false);
+
 	const benefits = [
 		'Fast, free estimates',
 		'Careful prep + protected floors',
@@ -65,15 +70,20 @@
 					<!-- Call To Action Buttons -->
 
 					<div class="  flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
-						<a
-							href="/quote"
-							class="w-full transform rounded-2xl bg-sky-400 px-10 py-5 font-bold text-white shadow-2xl transition-colors delay-100 duration-300 ease-in-out hover:bg-teal-500 sm:w-auto"
+						<button
+							onclick={() => (isOpen = true)}
+							class="w-full transform rounded-2xl bg-sky-400 px-10 py-5 font-bold text-white shadow-2xl transition-colors delay-100 duration-300 ease-in-out hover:bg-sky-500 sm:w-auto"
 						>
 							Get a Free Quote →
-						</a>
+						</button>
+
+						<Dialog bind:open={isOpen}>
+							Ca
+							<QuoteForm />
+						</Dialog>
 						<a
 							href="tel:15872084445"
-							class=" w-full rounded-2xl bg-emerald-500 px-10 py-5 font-bold text-white shadow-sm transition-colors delay-100 duration-300 ease-in-out hover:bg-cyan-500 hover:shadow-md sm:w-auto"
+							class=" w-full rounded-2xl bg-emerald-400 px-10 py-5 font-bold text-white shadow-sm transition-colors delay-100 duration-300 ease-in-out hover:bg-emerald-500 hover:shadow-md sm:w-auto"
 						>
 							Call 587-208-4445
 						</a>

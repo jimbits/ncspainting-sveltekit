@@ -22,21 +22,20 @@
 		border: none;
 		background: transparent;
 		padding: 0;
-		margin: auto;
 		max-width: 100vw;
 		max-height: 100vh;
 	}
 
 	/* Native <dialog> backdrop */
 	.dialog::backdrop {
-		background: rgba(70, 70, 70, 0.829);
+		background: rgba(0, 0, 0, 0.5);
 		backdrop-filter: blur(4px);
 		animation: fade-in 200ms ease forwards;
 	}
 
 	.dialog-panel {
 		position: relative;
-		background: #ffffff;
+		background: #fff;
 		border-radius: 12px;
 		padding: 2rem;
 		min-width: 360px;

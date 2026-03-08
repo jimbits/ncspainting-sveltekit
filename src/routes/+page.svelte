@@ -13,6 +13,8 @@
 	import AdditionalPaintingServices from '$lib/components/pages/landing/AdditionalPaintingServices.svelte';
 	import Faq from '$lib/components/pages/landing/Faq.svelte';
 
+	import QuoteRequestForm from '$lib/components/forms/quote/QuoteRequestForm.svelte';
+	import Footer from '$lib/components/pages/landing/Footer.svelte';
 	import ServiceAreas from '$lib/components/pages/landing/ServiceAreas.svelte';
 </script>
 
@@ -21,8 +23,10 @@
 <InteriorPaintingServices />
 <ExteriorPaintingServices />
 <AdditionalPaintingServices />
+<QuoteRequestForm />
 <ServiceAreas />
 <Process />
 <EcoFriendly />
-<Faq />7
+<Faq />
 <LetUsHelp />
+<Footer />

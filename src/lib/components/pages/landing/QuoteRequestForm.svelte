@@ -56,14 +56,16 @@
 </script>
 
 <section class={cn('w-full bg-slate-200 py-16 sm:py-20 lg:py-24', className)}>
-	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-		<div class="flex flex-col justify-center gap-10 lg:flex-row lg:items-center lg:gap-16">
+	<div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+		<div class="flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-16">
 			<!-- Section Header -->
 			<div class="mb-2 max-w-2xl space-y-8 text-center lg:mb-8 lg:max-w-[600px] lg:text-left">
 				<header>
-					<h2 class="mb-3 text-3xl font-bold text-slate-900 sm:text-4xl md:text-6xl">Get a Free Painting Estimate</h2>
+					<h2 class="mb-3 text-3xl font-bold text-slate-900 sm:text-4xl md:text-5xl">
+						Get a Free Painting Estimate in Edmonton
+					</h2>
 					<p class="text-base text-pretty text-slate-600 sm:text-lg md:text-xl">
-						Get a professional no obligation quote or help with planning your project.
+						Professional residential and commercial painting services. Free quotes, no obligation.
 					</p>
 				</header>
 

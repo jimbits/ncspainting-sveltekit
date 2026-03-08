@@ -1,5 +1,9 @@
 <script>
+	import Dialog from '$lib/components/modals/Dialog.svelte';
+	import QuoteForm from '$lib/components/modals/content/QuoteForm.svelte';
 	import { Footprints, GitPullRequest, NotebookText, Paintbrush, TrafficCone } from '@lucide/svelte';
+
+	let isOpen = $state(false);
 </script>
 
 <!-- Our Process Section -->
@@ -130,15 +134,16 @@
 		</div>
 
 		<div class="mt-20 flex flex-col items-center justify-center gap-6 sm:flex-row">
-			<a
-				href="/quote"
-				class="flex items-center gap-2 rounded-xl bg-amber-500 px-10 py-4 font-bold text-slate-950 shadow-lg transition-all hover:bg-amber-600"
+			<button
+				onclick={() => (isOpen = true)}
+				class="rounded-xl bg-orange-500 px-4 py-4 text-center text-sm font-bold text-white transition-all hover:bg-orange-600 hover:shadow-xl sm:px-8 sm:text-base"
 			>
-				Get a Free Quote
-				<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-				</svg>
-			</a>
+				Get a Free Quote →
+			</button>
+
+			<Dialog bind:open={isOpen}>
+				<QuoteForm />
+			</Dialog>
 			<a
 				href="tel:15872084445"
 				class="flex items-center gap-2 font-bold text-slate-900 transition-colors hover:text-amber-600"
