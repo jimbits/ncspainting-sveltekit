@@ -4,6 +4,7 @@
 	import { Check } from 'lucide-svelte';
 	type QuoteFormProps = {
 		class?: string;
+		form?: { success?: boolean; message?: string; emailId?: string } | null;
 	};
 	type ClickHandler<T extends HTMLElement> = (e: MouseEvent & { currentTarget: T }) => void;
 	type ContactMethod = '' | 'Phone' | 'Email' | 'Either';
@@ -21,6 +22,8 @@
 </script>
 
 <script lang="ts">
+	import { enhance } from '$app/forms';
+
 	let formData = $state<QuoteFormData>({
 		name: '',
 		phone: '',
@@ -30,7 +33,7 @@
 		projectDescription: '',
 		serviceArea: ''
 	});
-	let { class: className }: QuoteFormProps = $props();
+	let { class: className, form }: QuoteFormProps = $props();
 	let charCount = $state(0);
 	const maxChars = 140;
 
@@ -45,13 +48,6 @@
 
 	function toggleSelection<K extends keyof QuoteFormData>(key: K, value: QuoteFormData[K]) {
 		formData[key] = value;
-		console.log(formData[key]);
-	}
-
-	function handleSubmit(event: SubmitEvent) {
-		event.preventDefault();
-		console.log('Form submitted:', formData);
-		// Add form submission logic here
 	}
 </script>
 
@@ -93,7 +89,7 @@
 			</div>
 
 			<!-- Bento Grid Form -->
-			<form onsubmit={handleSubmit} class="w-full space-y-4 lg:w-[500px]">
+			<form method="POST" use:enhance class="w-full space-y-4 lg:w-[500px]">
 				<div
 					class="rounded-3xl border border-slate-200 bg-white px-6 py-10 shadow-sm transition-shadow hover:shadow-md sm:px-8 sm:py-12"
 				>
@@ -109,6 +105,7 @@
 							<input
 								type="text"
 								id="name"
+								name="name"
 								required
 								bind:value={formData.name}
 								class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-slate-900 transition-all placeholder:text-slate-400 focus:border-blue-400 focus:bg-white focus:ring-2 focus:ring-blue-400/20 focus:outline-none"
@@ -122,6 +119,7 @@
 							<input
 								type="tel"
 								id="phone"
+								name="phone"
 								required
 								bind:value={formData.phone}
 								class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-slate-900 transition-all placeholder:text-slate-400 focus:border-blue-400 focus:bg-white focus:ring-2 focus:ring-blue-400/20 focus:outline-none"
@@ -135,6 +133,7 @@
 							<input
 								type="email"
 								id="email"
+								name="email"
 								required
 								bind:value={formData.email}
 								class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-slate-900 transition-all placeholder:text-slate-400 focus:border-blue-400 focus:bg-white focus:ring-2 focus:ring-blue-400/20 focus:outline-none"
@@ -223,13 +222,24 @@
 					</div>
 
 					<!-- Submit Button Bento Box -->
-					<div class="mt-12">
-						<button
-							type="submit"
-							class="w-full rounded-lg bg-blue-500 px-8 py-4 text-base font-bold text-white shadow-lg transition-all hover:bg-blue-600 hover:shadow-xl active:scale-95 md:w-auto"
-						>
-							Get Your Free Quote
-						</button>
+					<div class="mt-12 space-y-4">
+						{#if form?.success}
+							<div class="rounded-2xl border border-green-200 bg-green-50 px-5 py-4 text-sm font-medium text-green-800">
+								{form.message}
+							</div>
+						{:else if form?.message}
+							<div class="rounded-2xl border border-red-200 bg-red-50 px-5 py-4 text-sm font-medium text-red-800">
+								{form.message}
+							</div>
+						{/if}
+						{#if !form?.success}
+							<button
+								type="submit"
+								class="w-full rounded-lg bg-blue-500 px-8 py-4 text-base font-bold text-white shadow-lg transition-all hover:bg-blue-600 hover:shadow-xl active:scale-95 md:w-auto"
+							>
+								Get Your Free Quote
+							</button>
+						{/if}
 					</div>
 				</div>
 			</form>

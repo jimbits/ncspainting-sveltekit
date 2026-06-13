@@ -14,10 +14,12 @@
 	import Faq from '$lib/components/pages/landing/Faq.svelte';
 
 	import QuoteRequestForm from '$lib/components/forms/quote/QuoteRequestForm.svelte';
+	import Appbar from '$lib/components/navigation/appbar/Appbar.svelte';
 	import Footer from '$lib/components/pages/landing/Footer.svelte';
 	import ServiceAreas from '$lib/components/pages/landing/ServiceAreas.svelte';
 </script>
 
+<Appbar />
 <Hero />
 <WhyChooseUs />
 <InteriorPaintingServices />

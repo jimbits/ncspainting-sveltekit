@@ -1,12 +1,15 @@
 # NCS Painting
 
 - NCS Painting is a residential and commercial interior and exterior painting company servicing
-  Edmonton and the surrounding communities of Sherwood Park, St Albert and Fort Saskatchewan.
+  Edmonton and the surrounding communities of Sherwood Park, St Albert and Fort Saskatchewan and Bueamont.
+
+- 30 years in the painting business.
+- We are a family owned business.
+  
 
 ## Service Focus
 
-NCS Painting specializes in interior and exterior home painting services. a professional painting company
-might offer. We focus on:
+NCS Painting offers the full range of residential painting services homeowners need, including:
 
 - residential interiors.
 - residential exteriors.
@@ -26,32 +29,39 @@ The target audience is primarily
 - home renovators
 - Rental property owners
 - property managers
-- relators
+- realtors
 - home builders and contractors
 - Customers seeking low-VOC, non-toxic, or environmentally friendly paints
-- Facility and operation managers
 
 ## Competitive Positioning:
 
-Yes we do want to compete on price but not at the expense of our core values of quality service and
-craftmanship.
+NCS Painting offers competitive pricing without compromising our core values of quality and craftsmanship.
 
 - Locally owned and operated.
 - Local trusted
 - Focused on quality customer service and craftmanship.
 - Transparent and Reliability
-- Garantee of out work
+- Guarantee of out work
 - Professional and timely service.
 
 ## Service Area Priority:
 
-Edmonton is the primary focus. However we also want to target the surrounding communites of Sherwood Park, St Albert and Fort Saskatchewan.
+Edmonton is the primary focus. However we also want to target the surrounding communities of Sherwood Park, St Albert and Fort Saskatchewan.
 
-Please suggest stratagies to target surrounding communities with equal
+Please suggest strategies to target surrounding communities with equal
 weight for each area placing Edmonton at the top as the priority.
 
-## Business Stage:
+## About NCS
 
 NCS is a family owned local Edmonton business.
 We have been in business for 30 years.
 We spcialize only in interior and exterior home painting services.
+
+
+## Page Sections
+
+Hero
+About Us
+Services
+Why Choose Us
+Get A Free Quote From A Proffessional
